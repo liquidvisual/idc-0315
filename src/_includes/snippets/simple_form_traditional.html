@@ -1,0 +1,68 @@
+{% assign form_title = include.title %}
+
+<form data-abide novalidate method="post" action="#">
+
+	<!-- Name -->
+	<div class="row">
+		<div class="large-2 columns">
+			<label>Name <span class="required">*</span></label>
+		</div>
+		<div class="large-10 columns">
+			<input name="name" class="radius" type="text" >
+			<small class="error">Your name is required.</small>
+		</div>
+	</div>
+
+	<!-- Wedding Date -->
+	<div class="row">
+		<div class="large-2 columns">
+			<label>Wedding Date <span class="required">*</span></label>
+		</div>
+		<div class="large-10 columns">
+			<input name="date" class="radius" type="date">
+			<small class="error">Please try again.</small>
+		</div>
+	</div>
+
+	<!-- Email -->
+	<div class="row">
+		<div class="large-2 columns">
+			<label>Email <span class="required">*</span></label>
+		</div>
+		<div class="large-10 columns">
+			<input name="email" class="radius" type="email" required>
+			<small class="error">A valid email address is required.</small>
+		</div>
+	</div>
+
+	<!-- Mobile -->
+	<div class="row">
+		<div class="large-2 columns">
+			<label>Mobile <span class="required">*</span></label>
+		</div>
+		<div class="large-10 columns">
+			<input name="phone" class="radius" type="text">
+			<small class="error">Please try again.</small>
+		</div>
+	</div>
+
+	<!-- Message -->
+	<div class="row">
+		<div class="large-2 columns">
+			<label>Enquiry <span class="required">*</span></label>
+		</div>
+		<div class="large-10 columns">
+			<textarea rows="10" class="radius" name="message" required></textarea>
+			<small class="error">Please enter a message.</small>
+		</div>
+	</div>
+
+	<!-- Submit -->
+	<div class="row">
+		<div class="large-10 large-offset-2 columns">
+			<small class="left"><span class="required">*</span> Required field to fill in</small>
+			<button type="submit" class="button right">send ></button>
+		</div>
+	</div>
+
+</form>

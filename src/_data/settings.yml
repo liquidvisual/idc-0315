@@ -1,0 +1,29 @@
+# GLOBAL SITE SETTINGS
+
+# General
+seo_title: ""
+title: "I Do Cinema"
+company: "I Do Cinema"
+description: "..."
+
+# Contact Info
+email_1: ido@idocinema.com.au
+email_2: ido@internode.on.net
+phone: +61 8 8361 2190
+mobile_karl: 0412 683 143
+mobile_dawn: 0422 147 313
+
+fax: (05) 555 555
+address: "..."
+
+# Social Networks
+facebook: ""
+vimeo: ""
+twitter: ""
+instagram: ""
+
+# Google Map
+google_map: ""
+
+# Google Analytics
+google_analytics: "UA-XXXXXXXX-X"

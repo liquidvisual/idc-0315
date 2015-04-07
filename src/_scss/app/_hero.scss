@@ -1,0 +1,59 @@
+/*
+    HERO.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Hero
+//-----------------------------------------------------------------
+
+.hero {
+	box-sizing: content-box; // overcome glitch with Safari ipad
+	position: relative;
+	height: 90vh; // fix ipad glitch?
+	background: url(../img/template/IDC-ring-full@2x.png) no-repeat center;
+	background-size: contain;
+	border-bottom: 50px solid white; // offset for ipad fix
+
+	@media #{$medium-up} and (min-height: 768px) {
+		background-size: calc(1200px / 2); // image halved
+	}
+
+	@media #{$large-up} {
+	    height: 100vh;
+	    border-bottom: 0;
+	}
+}
+
+//=========================================
+// Awards
+//=========================================
+
+.hero .awards {
+	.columns {
+		position: relative;
+		height: calc(90vh - 0px);
+
+		@media #{$large-up} {
+		    height: calc(100vh - 50px);
+		}
+	}
+
+	ul {
+		position: absolute;
+		left: 0;
+		bottom: 0; // match social icons
+
+		li {
+			padding-bottom: 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+/*
+    MEDIA.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+.lv-super .slick-slider {
+	margin-bottom: 10px;
+}
+
+.lv-super .slick-slide {
+	margin: 0 5px;
+}
+//-----------------------------------------------------------------
+// Slider General
+//-----------------------------------------------------------------
+
+.lv-super .slick-next,
+.lv-super .slick-prev {
+	// background: aqua;
+	height: 100%;
+	top: 10px;
+}
+
+.lv-super .slick-next:before,
+.lv-super .slick-prev:before {
+	font-family: "FontAwesome";
+	color: #C1AE9B;
+	font-size: rem-calc(50);
+	line-height: 50px;
+	// background: red;
+}
+
+.lv-super .slick-next:before {
+	content: "\f105"; // <
+}
+
+.lv-super .slick-prev:before {
+	content: "\f104"; // >
+}
+
+//-----------------------------------------------------------------
+// Horizontal Slider
+//-----------------------------------------------------------------
+
+
+
+//-----------------------------------------------------------------
+// Gallery Slider
+//-----------------------------------------------------------------
+
+.gallery-slider .slick-next:before,
+.gallery-slider .slick-prev:before {
+	color: #F4ADCC;
+}

@@ -1,0 +1,46 @@
+/*
+    FOOTER.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Footer
+//-----------------------------------------------------------------
+
+.global-footer {
+	position: relative;
+	padding-bottom: 20px;
+
+	.footer-ring {
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    background: url(../img/template/footer-ring@2x.png) no-repeat bottom;
+	    background-size: contain;
+	    z-index: -1;
+
+	    @media #{$medium-up} {
+	        // width: 236px;
+	        // height: 347px;
+	    }
+
+	    @media #{$large-up} {
+	        width: 872px;
+	        height: 1294px;
+	        // height: 747px;
+	    }
+	}
+
+	a {
+		font-family: "Futura";
+		font-size: rem-calc(14);
+	}
+}
+
+//=========================================
+//
+//=========================================

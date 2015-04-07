@@ -1,0 +1,55 @@
+{% assign settings = site.data.settings %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- GALLERY SLIDER -->
+<section class="section">
+	<div class="row">
+		<div class="medium-10 large-7 medium-centered columns">
+
+			<div class="gallery-slider">
+				<div class="slider slider-for">
+
+					<!-- Images -->
+					{% for i in (1..6) %}
+						<div>
+							<h3>Carla &amp; James</h3>
+							<img width="100%" src="http://kenwheeler.github.io/slick/img/fonz1.png" alt="">
+						</div>
+					{% endfor %}
+				</div>
+				<div class="slider slider-nav">
+
+					<!-- Mirrored Contents -->
+					{% for i in (1..6) %}
+						<div>
+							<img width="100%" src="http://kenwheeler.github.io/slick/img/fonz1.png" alt="">
+							<h3>Carla &amp; James</h3>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+
+		</div>
+	</div> <!-- .row -->
+</section>
+
+{% comment %}
+<!-- HORIZONTAL SLIDER -->
+<div class="row">
+	<div class="medium-8 large-4 medium-centered columns">
+		<div class="slider multiple-items">
+			{% for i in (1..6) %}
+				<div>
+					<img width="100%" src="http://lorempixel.com/280/160?{{i}}">
+					<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+				</div>
+			{% endfor %}
+		</div>
+	</div> <!-- .columns -->
+</div> <!-- .row -->
+{% endcomment %}

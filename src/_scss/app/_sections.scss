@@ -1,0 +1,45 @@
+/*
+    SECTIONS.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Sections
+//-----------------------------------------------------------------
+
+.section {
+	padding: rem-calc(30 0);
+}
+
+.color-section {
+    background: #EBEBEB;
+}
+
+.image-section {
+	height: calc(80vh);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/img/content/newly-weds-bg.jpg);
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+
+    @media #{$large-up} {
+        height: calc(100vh);
+        background-attachment: fixed; // issues on devices
+    }
+}
+
+// refactor
+.section .lead {
+	font-size: rem-calc(30);
+}
+
+//=========================================
+//
+//=========================================

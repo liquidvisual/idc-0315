@@ -1,0 +1,274 @@
+---
+layout: master
+---
+
+{% assign settings = site.data.settings %}
+
+<!-- HERO -->
+<div class="hero">
+
+	<!-- Awards -->
+	<div class="awards show-for-medium-up">
+		<div class="row outer-row">
+			<div class="columns">
+				<ul class="medium-block-grid-1">
+					{% for i in (1..6) %}
+						<li><a href="{{ settings.email }}"><img width="50" src="/img/content/award-1@2x.png"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div> <!-- .hero -->
+
+<!-- SOCIAL NETWORKS -->
+<div class="social-networks">
+	<div class="row outer-row">
+		<div class="columns">
+			<ul class="lv-inline-list close-gaps text-center medium-text-right">
+				<li><a href="{{ settings.email }}"><img width="30" src="/img/template/email-icon@2x.png"></a></li>
+				<li><a href="{{ settings.vimeo }}"><img width="30" src="/img/template/vimeo-icon@2x.png"></a></li>
+				<li><a href="{{ settings.twitter }}"><img width="30" src="/img/template/twitter-icon@2x.png"></a></li>
+				<li><a href="{{ settings.facebook }}"><img width="30" src="/img/template/facebook-icon@2x.png"></a></li>
+				<li><a href="{{ settings.instagram }}"><img width="30" src="/img/template/instagram-icon@2x.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- IMAGE SECTION -->
+<section class="section image-section"></section>
+
+<!-- Text Section -->
+<section class="section">
+	<div class="row">
+		<div class="medium-12 large-8 medium-centered columns text-center">
+			<p class="lead">Multi award winning Karl, Dawn and their I Do Cinema dream team <br>capture the most breathtaking images of your <strong><em>Forever Dream Wedding.</em></strong> <br>Using revolutionary state of the art cinematography starring... the bride and groom!</p>
+		</div>
+	</div>
+</section>
+
+<!-- ************ ABOUT US ************ -->
+
+<!-- Bio Section -->
+<section id="about-us" class="section color-section">
+	<div class="row outer-row">
+		<div class="large-9 medium-centered columns">
+
+			<!-- 50% Split Columns -->
+			<div class="row">
+				<div class="medium-6 columns">
+					<div class="row">
+						<div class="medium-3 columns">
+							<img width="130" src="/img/content/karl@2x.jpg">
+						</div>
+						<div class="medium-9 columns">
+							<h3>Karl Baroudi</h3>
+							<p>Cinematographer<p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+				</div> <!-- .columns -->
+				<div class="medium-6 columns">
+					<div class="row">
+						<div class="medium-3 columns">
+							<img width="130" src="/img/content/dawn@2x.jpg">
+						</div>
+						<div class="medium-9 columns">
+							<h3>Dawn Baroudi</h3>
+							<p>Cinematographer</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation</p>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div> <!-- .columns -->
+	</div> <!-- .row -->
+</section> <!-- #about-us -->
+
+<!-- Text Section -->
+<section class="section">
+	<div class="row">
+		<div class="medium-9 medium-centered columns text-center">
+			<p>Contact Karl or Dawn +61 8 8361 2190 or fill in the contact form on this website for an appointment to view their latest work and to discuss your wedding dreams.</p>
+			<p><strong>Accreditation</strong>: Member of the ACS | Member of the AVPA | Member of the ABIA</p>
+			<p><strong>2013 Winner ABIA “Excellence in Video Production</strong> (Previous Winners for; 2012, 2010, 2007, 2006 and 2005)</p>
+		</div>
+	</div>
+</section>
+
+<!-- Divider -->
+<div class="row outer-row">
+	<div class="columns">
+		<hr>
+	</div>
+</div>
+
+<!-- ************ CINEMA ************ -->
+
+{% include cinema.html %}
+
+<!-- ************ CORPORATE ************ -->
+
+<!-- Text Section -->
+<section id="corporate" class="section">
+	<div class="row outer-row">
+		<div class="medium-9 medium-centered columns text-center">
+			<p class="lead">I Do Cinema Corporate</p>
+			<p>Create unique cinematic TV commercials, online videos and promotional events tailored to your business needs. <br>Talk to our multi award winning dream team of dedicated professionals today.</p>
+			<p>Creative Directions | Cinematographers | Editors <br>
+			<strong>Karl</strong> <a href="tel:{{settings.mobile_karl}}">{{settings.mobile_karl}}</a> &nbsp;&nbsp;&nbsp; <strong>Dawn</strong> <a href="tel:{{settings.mobile_dawn}}">{{settings.mobile_dawn}}</a>
+			<br>
+			<a href="{{settings.phone}}">{{settings.phone}}</a>&nbsp;&nbsp;&nbsp;
+			<a href="{{settings.email_1}}">{{settings.email_1}}</a>&nbsp;&nbsp;&nbsp;
+			<a href="{{settings.email_2}}">{{settings.email_2}}</a></p>
+		</div>
+	</div>
+
+	<br>
+
+	<!-- HORIZONTAL SLIDER -->
+	<div class="row">
+		<div class="medium-8 large-4 medium-centered columns">
+			<div class="slider multiple-items">
+				{% for i in (1..6) %}
+					<div>
+						<img width="100%" src="http://lorempixel.com/280/160?{{i}}">
+						<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+					</div>
+				{% endfor %}
+			</div>
+		</div> <!-- .columns -->
+	</div> <!-- .row -->
+
+</section>
+
+<!-- Divider -->
+<div class="row outer-row">
+	<div class="columns">
+		<hr>
+	</div>
+</div>
+
+<!-- ************ RAVES ************ -->
+
+<section id="raves" class="section">
+	<div class="row outer-row">
+		<div class="large-10 large-centered columns">
+			<ul class="medium-block-grid-2 large-block-grid-4">
+				<li>
+					<h3>Christine &amp; Rockie</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco</p>
+				</li>
+				<li>
+					<h3>Jessica &amp; Daniel</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi.</p>
+				</li>
+				<li>
+					<h3>Fiona &amp; Dion</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.</p>
+				</li>
+				<li>
+					<h3>Jack &amp; Jill</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</li>
+				<li>
+					<h3>Eleni &amp; Alex</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris.</p>
+				</li>
+				<li>
+					<h3>Belal &amp; Abby</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco.</p>
+				</li>
+				<li>
+					<h3>Carla &amp; James</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- ************ CONTACT US ************ -->
+
+<!-- Text Section -->
+<section id="contact-us" class="section contact-section">
+	<div class="row outer-row">
+		<div class="large-9 columns">
+
+			<div class="row">
+				<div class="medium-6 medium-push-6 columns">
+
+					<!-- <h2>contact us</h2> -->
+					<p class="lead primary-color">contact us</p>
+					<p class="lead">Contact Dawn or Karl for more details.</p>
+
+					<div class="row collapse">
+						<div class="small-3 medium-2 large-2 columns">
+							<p>
+								<strong>Karl</strong><br>
+								<strong>Dawn</strong>
+							</p>
+						</div>
+						<div class="small-9 medium-10 large-10 columns">
+							<p>
+								<a href="tel:{{settings.mobile_karl}}">{{settings.mobile_karl}}</a><br>
+								<a href="tel:{{settings.mobile_dawn}}">{{settings.mobile_dawn}}</a><br>
+								<br>
+								<a href="tel:{{settings.phone}}">{{settings.phone}}</a><br>
+								<a href="tel:{{settings.email_1}}">{{settings.email_1}}</a><br>
+								<a href="tel:{{settings.email_2}}">{{settings.email_2}}</a>
+							</p>
+						</div>
+					</div>
+
+					<p class="lead">Or fill in our contact form on
+					and we will be in touch as soon
+					as we can.</p>
+
+				</div> <!-- .columns -->
+				<div class="medium-6 medium-pull-6 columns">
+					{% include snippets/simple_form_traditional.html %}
+				</div>
+			</div> <!-- .row -->
+
+		</div> <!-- .columns -->
+	</div> <!-- .outer-row -->
+</section>

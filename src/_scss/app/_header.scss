@@ -1,0 +1,88 @@
+/*
+    HEADER.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Header
+//-----------------------------------------------------------------
+
+.global-header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: rem-calc(20 0 0 0); // for hamburger
+	z-index: 1;
+	background: none; // stupid foundation
+
+	@media #{$large-up} {
+	    padding-top: rem-calc(50);
+	}
+
+	&.is-sticky {
+		@media #{$large-up} {
+			position: fixed;
+			padding: rem-calc(15 0 5 0);
+		    background: white;
+		    border-bottom: 1px solid #E6E6E6;
+
+		    .global-navigation a {
+		    	color: lighten($primary-color, 20%);
+		    	border-color: lighten($primary-color, 20%);
+		    }
+
+		    .active a {
+		    	color: $primary-color;
+		    }
+		}
+
+	}
+}
+
+//-----------------------------------------------------------------
+// Links
+//-----------------------------------------------------------------
+
+.global-header {
+	ul {
+		list-style: none;
+		margin: 0;
+		overflow: hidden;
+		font-size: rem-calc(14);
+
+		> li {
+			display: inline-block;
+			float: left;
+
+			&:last-child a {
+				border: 0;
+			}
+		}
+		a {
+			text-transform: uppercase;
+			font-family: "Futura";
+			padding: rem-calc(0 10);
+			border-right: 1px solid $primary-color;
+		}
+	}
+}
+
+.global-header .logo {
+	// display: inline-block;
+}
+
+//-----------------------------------------------------------------
+// Links
+//-----------------------------------------------------------------
+
+.global-header .hamburger {
+	@include hamburger($width: 34px, $gap: 8px, $thickness: 4px, $color: $primary-color);
+}
+
+//=========================================
+//
+//=========================================

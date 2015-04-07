@@ -1,0 +1,17 @@
+- title: Home
+  url: /
+
+- title: About Us
+  url: "#about-us"
+
+- title: Cinema
+  url: "#cinema"
+
+- title: Corporate
+  url: "#corporate"
+
+- title: Raves
+  url: "#raves"
+
+- title: Contact Us
+  url: "#contact-us"
