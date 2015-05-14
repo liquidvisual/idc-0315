@@ -27,33 +27,52 @@
 //-----------------------------------------------------------------
 // App Unique
 //-----------------------------------------------------------------
-
-@import "app/variables";
-@import "app/global";
-@import "app/mixins";
-
+//=========================================
+// Base
 //=========================================
 
-@import "app/breadcrumbs";
-@import "app/buttons";
-@import "app/fonts";
-@import "app/footer";
-@import "app/forms";
-@import "app/gallery";
-@import "app/header";
-@import "app/hero";
-@import "app/lists";
-@import "app/media";
-@import "app/modules";
-@import "app/navigation";
-@import "app/sections";
-@import "app/sidebar";
-@import "app/tabs";
-@import "app/social-networks";
-@import "app/special";
-@import "app/widgets";
-@import "app/themes";
-@import "app/type";
+@import "app/base/variables";
+@import "app/base/fonts";
+@import "app/base/global";
+@import "app/base/mixins";
+
+//=========================================
+// Layout
+//=========================================
+
+@import "app/layout/header";
+@import "app/layout/footer";
+@import "app/layout/navigation";
+@import "app/layout/sidebar";
+
+//=========================================
+// Components
+//=========================================
+
+@import "app/components/breadcrumbs";
+@import "app/components/buttons";
+@import "app/components/forms";
+@import "app/components/lists";
+@import "app/components/media";
+@import "app/components/social-networks";
+@import "app/components/type";
+
+//=========================================
+// Modules
+//=========================================
+
+@import "app/modules/gallery";
+@import "app/modules/hero";
+@import "app/modules/modules";
+@import "app/modules/sections";
+@import "app/modules/tabs";
+
+//=========================================
+// Helpers
+//=========================================
+
+@import "app/helpers/special";
+@import "app/helpers/themes";
 
 //-----------------------------------------------------------------
 // Vendor

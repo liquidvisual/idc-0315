@@ -45,7 +45,7 @@
 
 	ul {
 		position: absolute;
-		left: 0;
+		left: rem-calc(15);
 		bottom: 0; // match social icons
 
 		li {

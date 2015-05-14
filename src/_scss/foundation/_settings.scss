@@ -151,11 +151,11 @@ $body-font-color: #929497;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$small-range: (0em, 40em);         // 640
-$medium-range: (40.063em, 64em);   // 641-1024
-$large-range: (64.063em, 80em);    // 1025-1280
-$xlarge-range: (80.063em, 110em);  // 1281-1760
-$xxlarge-range: (110.063em);       // 1760+
+$small-range: (0em, 40em);              // 640
+$medium-range: (40.063em, 64em);        // 641-1024
+$large-range: (64.063em, 80em);         // 1025-1280
+$xlarge-range: (80.063em, 90em);        // 1281-1440
+$xxlarge-range: (90.063em, 116.250em);  // 1440-1860
 
 $screen: "only screen";
 
