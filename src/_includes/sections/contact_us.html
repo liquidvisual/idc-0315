@@ -1,0 +1,44 @@
+<!-- Text Section -->
+<section id="contact-us" class="section contact-section">
+	<div class="row outer-row">
+		<div class="large-9 columns">
+
+			<div class="row">
+				<div class="medium-6 medium-push-6 columns">
+
+					<!-- <h2>contact us</h2> -->
+					<p class="lead primary-color">contact us</p>
+					<p class="lead">Contact Dawn or Karl for more details.</p>
+
+					<div class="row collapse">
+						<div class="small-3 medium-2 large-2 columns">
+							<p>
+								<strong>Karl</strong><br>
+								<strong>Dawn</strong>
+							</p>
+						</div>
+						<div class="small-9 medium-10 large-10 columns">
+							<p>
+								<a href="tel:{{settings.mobile_karl}}">{{settings.mobile_karl}}</a><br>
+								<a href="tel:{{settings.mobile_dawn}}">{{settings.mobile_dawn}}</a><br>
+								<br>
+								<a href="tel:{{settings.phone}}">{{settings.phone}}</a><br>
+								<a href="tel:{{settings.email_1}}">{{settings.email_1}}</a><br>
+								<a href="tel:{{settings.email_2}}">{{settings.email_2}}</a>
+							</p>
+						</div>
+					</div>
+
+					<p class="lead">Or fill in our contact form on
+					and we will be in touch as soon
+					as we can.</p>
+
+				</div> <!-- .columns -->
+				<div class="medium-6 medium-pull-6 columns">
+					{% include snippets/simple_form_traditional.html %}
+				</div>
+			</div> <!-- .row -->
+
+		</div> <!-- .columns -->
+	</div> <!-- .outer-row -->
+</section>

@@ -4,23 +4,26 @@
 {% endcomment %}
 
 {% assign settings = site.data.settings %}
-{% assign logo = "/img/content/logo@2x.png" %}
 
 <div class="row outer-row">
-    <div class="medium-4 columns">
-        <ul class="show-for-large-up">
+    <div class="medium-8 large-4 columns">
+
+        <!-- Logo -->
+        <a class="logo animated bounceIn" href="#home" title="{{ settings.seo_title }}" itemprop="url">
+            <img width="90" src="/img/content/logo@2x.png" alt="{{ settings.company_title }}" itemprop="logo">
+        </a>
+
+        <!-- Locations -->
+        <ul class="locations show-for-large-up">
             <li><a href="#">Adelaide</a></li>
             <li><a href="#">Australia</a></li>
             <li><a href="#">Worldwide</a></li>
         </ul>
 
-        <!-- Logo -->
-        <!-- <div class="logo" href="/" title="{{ settings.seo_title }}" itemprop="url">
-            <img width= "74" src="{{ logo }}" alt="{{ settings.company_title }}" itemprop="logo">
-        </div> -->
-
     </div>
-    <div class="medium-8 columns">
+    <div class="medium-4 large-8 columns">
+
+        <!-- Global Navigation -->
         <nav class="global-navigation show-for-large-up">
             {% include navigation.html %}
         </nav>

@@ -26,8 +26,10 @@
 	&.is-sticky {
 		@media #{$large-up} {
 			position: fixed;
+			display: table;
+			padding: 0;
 			padding: rem-calc(15 0 5 0);
-		    background: white;
+		    background: rgba(255, 255, 255, 0.96);
 		    border-bottom: 1px solid #E6E6E6;
 
 		    .global-navigation a {
@@ -53,6 +55,7 @@
 		margin: 0;
 		overflow: hidden;
 		font-size: rem-calc(14);
+		// background: orange;
 
 		> li {
 			display: inline-block;
@@ -71,8 +74,33 @@
 	}
 }
 
+//-----------------------------------------------------------------
+// has-logo State
+//-----------------------------------------------------------------
+
+.global-header {
+	@include transition('all');
+}
+
 .global-header .logo {
-	// display: inline-block;
+	display: none;
+}
+
+.global-header.has-logo {
+	padding: 0;
+
+	.logo {
+		display: inline-block;
+		float: left;
+		margin-right: rem-calc(10);
+		padding: rem-calc(10 0);
+	}
+
+	.locations,
+	.global-navigation {
+		position: relative;
+		top: 36px; // magic
+	}
 }
 
 //-----------------------------------------------------------------

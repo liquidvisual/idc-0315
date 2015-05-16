@@ -51,11 +51,17 @@ $(window).scroll(function(event){
    });
 
 	// Magic numbers ahead - height of sticky nav
-   if (y >= 36)
-       $('.js-global-header').addClass('is-sticky');
-   else
-       $('.js-global-header').removeClass('is-sticky');
+  if (y >= 36) {
+     $('.js-global-header').addClass('is-sticky');
+  } else {
+     $('.js-global-header').removeClass('is-sticky');
+  }
 
+  if (y >= 766) {
+     $('.js-global-header').addClass('has-logo');
+  } else {
+     $('.js-global-header').removeClass('has-logo');
+  }
 
    // Get the id of the current element
    cur = cur[cur.length-1];
