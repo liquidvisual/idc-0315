@@ -1,6 +1,6 @@
 {% assign sitemap = site.data.sitemap %}
 
-<ul class="js-scroll-highlight">
+<ul class="js-scroll-highlight" data-magellan-expedition>
 
 	<!-- Displayed on MMenu only -->
 	<li class="hide-for-large-up"><a href="#">Adelaide</a></li>
@@ -9,6 +9,6 @@
 	<li class="hide-for-large-up Spacer"></li>
 
     {% for item in sitemap %}
-        <li><a href="#{{ item.url | slugify }}">{{ item.title }}</a></li>
+        <li data-magellan-arrival="{{ item.url | slugify }}"><a href="#{{ item.url | slugify }}">{{ item.title }}</a></li>
     {% endfor %}
 </ul>

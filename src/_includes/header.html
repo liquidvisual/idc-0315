@@ -6,33 +6,33 @@
 {% assign settings = site.data.settings %}
 
 <div class="row outer-row">
-    <div class="medium-8 large-4 columns">
+    <div class="medium-8 large-5 columns">
 
         <!-- Logo -->
-        <a class="logo animated bounceIn" href="#home" title="{{ settings.seo_title }}" itemprop="url">
+        <a class="logo animated bounceIn" href="#top" title="{{ settings.seo_title }}" itemprop="url">
             <img width="90" src="/img/content/logo@2x.png" alt="{{ settings.company_title }}" itemprop="logo">
         </a>
 
         <!-- Locations -->
-        <ul class="locations show-for-large-up">
+        <ul class="locations show-for-medium-up">
             <li><a href="#">Adelaide</a></li>
             <li><a href="#">Australia</a></li>
             <li><a href="#">Worldwide</a></li>
         </ul>
 
     </div>
-    <div class="medium-4 large-8 columns">
+    <div class="medium-4 large-7 columns">
 
         <!-- Global Navigation -->
         <nav class="global-navigation show-for-large-up">
             {% include navigation.html %}
         </nav>
 
-        <!-- Hamburger -->
-        <div class="header-mobile-menu hide-for-large-up right">
-            <a href="#"><span class="hamburger"><span class="hamburger-icon"></span></span></a>
-        </div>
-
     </div>
-</div>
 
+    <!-- Hamburger -->
+    <div class="header-mobile-menu hide-for-large-up">
+        <a href=""><span class="hamburger"><span class="hamburger-icon"></span></span></a>
+    </div>
+
+</div>

@@ -11,6 +11,23 @@
 // Gallery
 //-----------------------------------------------------------------
 
+.gallery-slider {
+	h4, h3 {
+		@media #{$small-only} {
+		    display: none; // we're use the swipe hint instead
+		}
+	}
+
+	iframe {
+		@media #{$medium-up} {
+		    height: 500px;
+		}
+
+		@media #{$xxlarge-up} {
+		    height: 760px;
+		}
+	}
+}
 
 
 //=========================================

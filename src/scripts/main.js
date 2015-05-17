@@ -24,12 +24,6 @@ $(window).load(function() {
 // }
 
 //-----------------------------------------------------------------
-// Offcanvas Menu
-//-----------------------------------------------------------------
-
-$("#off-canvas-menu").mmenu({ "offCanvas": { "position": "right" }});
-
-//-----------------------------------------------------------------
 // Testimonial Slider
 //-----------------------------------------------------------------
 
@@ -45,11 +39,17 @@ $('.multiple-items').slick({
 
 // var touchEvent = TOUCH_ENABLED ? "touchstart" : "click";
 
-//Trigger hamburger by touch on mobile - this eliminates glitch with FastClick.js
+$('#off-canvas-menu').mmenu({ "offCanvas": { "position": "right" }});
+var API = $("#off-canvas-menu").data( "mmenu" );
+
 $('.hamburger').bind('click', function(e) {
     e.preventDefault();
-    $('#off-canvas-menu').trigger('open.mm');
+    API.open();
 });
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
 
 if (TOUCH_ENABLED) {
     // Make Accordion jump to the top of the heading on mobile

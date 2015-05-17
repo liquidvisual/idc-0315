@@ -92,13 +92,13 @@ $font-family-serif: "MotionPicture", Georgia, Cambria, "Times New Roman", Times,
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal !default;
+$font-weight-normal: 300;
 // $font-weight-bold: bold !default;
 
 // We use these as default colors throughout
 $primary-color: #EC72AA;
 $secondary-color: #eb74a9;
-$alert-color: #f04124;
+$alert-color: #E34253;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
@@ -125,7 +125,7 @@ $alert-color: #f04124;
 
 // We use these to control various global styles
 // $body-bg: $white;
-$body-font-color: #929497;
+$body-font-color: #777; //#929497;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -197,19 +197,19 @@ $large: $large-up;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-$header-font-family: $font-family-serif;
+// $header-font-family: $font-family-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-$header-font-color: $primary-color;
+$header-font-color: $body-font-color; //$primary-color;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
+$h1-font-size: rem-calc(32);
+$h2-font-size: rem-calc(32);
+$h3-font-size: rem-calc(32); // because font-face is tiny
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
@@ -236,7 +236,7 @@ $header-font-color: $primary-color;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-$paragraph-font-size: rem-calc(19);
+$paragraph-font-size: rem-calc(20);
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);

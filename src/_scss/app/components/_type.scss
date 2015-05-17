@@ -11,8 +11,26 @@
 // Type
 //-----------------------------------------------------------------
 
+h3, h4, h5, h6 {
+	color: $primary-color;
+	font-family: $font-family-serif;
+}
 
+// refactor
+p.lead {
+	font-size: $paragraph-font-size;
+
+	@media #{$medium-up} {
+	    font-size: rem-calc(30);
+	}
+}
 
 //=========================================
-//
+// Contexts
 //=========================================
+
+.contact-section h2 {
+	font-size: rem-calc(48);
+	color: $primary-color;
+	margin-top: 0;
+}

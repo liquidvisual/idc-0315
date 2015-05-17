@@ -20,7 +20,8 @@
 }
 
 .image-section {
-	height: calc(80vh);
+	// height: calc(80vh);
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(/img/content/newly-weds-bg.jpg);
@@ -30,14 +31,10 @@
             background-size: cover;
 
     @media #{$large-up} {
-        height: calc(100vh);
+        // height: calc(100vh);
+        height: 100%;
         background-attachment: fixed; // issues on devices
     }
-}
-
-// refactor
-.section .lead {
-	font-size: rem-calc(30);
 }
 
 //=========================================

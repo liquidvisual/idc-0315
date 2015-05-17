@@ -7,9 +7,13 @@
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+$gold-color: #C1AE9B;
+
 //-----------------------------------------------------------------
 //
 //-----------------------------------------------------------------
+
 .lv-super .slick-slider {
 	margin-bottom: 10px;
 }
@@ -23,6 +27,10 @@
 
 .lv-super .slick-next,
 .lv-super .slick-prev {
+
+	@media #{$small-only} {
+	    display: none !important;
+	}
 	// background: aqua;
 	height: 100%;
 	top: 10px;
@@ -31,7 +39,7 @@
 .lv-super .slick-next:before,
 .lv-super .slick-prev:before {
 	font-family: "FontAwesome";
-	color: #C1AE9B;
+	color: $gold-color;
 	font-size: rem-calc(50);
 	line-height: 50px;
 	// background: red;
@@ -49,7 +57,9 @@
 // Horizontal Slider
 //-----------------------------------------------------------------
 
-
+.slider h4 {
+	color: #8A6D4D;
+}
 
 //-----------------------------------------------------------------
 // Gallery Slider

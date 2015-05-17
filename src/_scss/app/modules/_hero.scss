@@ -12,10 +12,15 @@
 //-----------------------------------------------------------------
 
 .hero {
-	position: relative;
+	// position: relative; // this ruins the effect on mobile !!
 	height: 100%;
 	background: url(../img/template/IDC-ring-full@2x.png) no-repeat center;
 	background-size: contain;
+
+	// Ingenious fluke to perfectly center graphic on mobile
+	@media #{$small-only} {
+	    border-bottom: 50px solid white; // offset for ipad fix
+	}
 
 	@media #{$medium-up} and (min-height: 768px) {
 		background-size: calc(1200px / 2); // image halved
@@ -32,36 +37,5 @@
 
 	ul li {
 		padding-bottom: 0;
-
-		&:last-child {
-			// margin-bottom: 0;
-		}
 	}
 }
-
-// Keep for reference..
-
-// .hero .awards {
-// 	.columns {
-// 		position: relative;
-// 		height: calc(90vh - 0px);
-
-// 		@media #{$large-up} {
-// 		    height: calc(100vh - 50px);
-// 		}
-// 	}
-
-// 	ul {
-// 		position: absolute;
-// 		left: rem-calc(15);
-// 		bottom: 0; // match social icons
-
-// 		li {
-// 			padding-bottom: 0;
-
-// 			&:last-child {
-// 				margin-bottom: 0;
-// 			}
-// 		}
-// 	}
-// }

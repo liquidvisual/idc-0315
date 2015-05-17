@@ -22,10 +22,10 @@
 	    background: url(../img/template/footer-ring@2x.png) no-repeat bottom;
 	    background-size: contain;
 	    z-index: -1;
+	    opacity: 0.3;
 
-	    @media #{$medium-up} {
-	        // width: 236px;
-	        // height: 347px;
+	    @media #{$xxlarge-up} {
+	        opacity: 1;
 	    }
 
 	    @media #{$large-up} {
@@ -37,7 +37,7 @@
 
 	a {
 		font-family: "Futura";
-		font-size: rem-calc(14);
+		font-size: rem-calc(16);
 	}
 }
 

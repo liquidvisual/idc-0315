@@ -1,9 +1,8 @@
-<!-- Text Section -->
-<section id="corporate" class="section">
+<section id="corporate" class="section corporate-section" data-magellan-destination="corporate">
 	<div class="row outer-row">
 		<div class="medium-9 medium-centered columns text-center">
-			<p class="lead">I Do Cinema Corporate</p>
-			<p>Create unique cinematic TV commercials, online videos and promotional events tailored to your business needs. <br>Talk to our multi award winning dream team of dedicated professionals today.</p>
+			<h2>I Do Cinema Corporate</h2>
+			<p class="leadX">Create unique cinematic TV commercials, online videos and promotional events tailored to your business needs. <br>Talk to our multi award winning dream team of dedicated professionals today.</p>
 			<p>Creative Directions | Cinematographers | Editors <br>
 			<strong>Karl</strong> <a href="tel:{{settings.mobile_karl}}">{{settings.mobile_karl}}</a> &nbsp;&nbsp;&nbsp; <strong>Dawn</strong> <a href="tel:{{settings.mobile_dawn}}">{{settings.mobile_dawn}}</a>
 			<br>
@@ -17,12 +16,14 @@
 
 	<!-- HORIZONTAL SLIDER -->
 	<div class="row">
-		<div class="medium-8 large-4 medium-centered columns">
+		<div class="small-12 medium-9 large-4 medium-centered columns">
 			<div class="slider multiple-items">
 				{% for i in (1..6) %}
 					<div>
-						<img width="100%" src="http://lorempixel.com/280/160?{{i}}">
-						<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						<a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+							<img width="100%" src="http://lorempixel.com/280/160?{{i}}" alt="Alt Here">
+							<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						</a>
 					</div>
 				{% endfor %}
 			</div>

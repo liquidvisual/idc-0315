@@ -1,7 +1,7 @@
 /*
     HEADER.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 17.05.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -12,10 +12,11 @@
 //-----------------------------------------------------------------
 
 .global-header {
+	@include transition('all');
 	position: absolute;
 	top: 0;
 	width: 100%;
-	padding: rem-calc(20 0 0 0); // for hamburger
+	padding-top: rem-calc(30);
 	z-index: 1;
 	background: none; // stupid foundation
 
@@ -24,24 +25,30 @@
 	}
 
 	&.is-sticky {
-		@media #{$large-up} {
-			position: fixed;
-			display: table;
-			padding: 0;
-			padding: rem-calc(15 0 5 0);
-		    background: rgba(255, 255, 255, 0.96);
-		    border-bottom: 1px solid #E6E6E6;
+		display: table;
+		padding: 0;
+		padding: rem-calc(15 0 5 0);
+	    // background: rgba(255, 255, 255, 0.96);
+	    // background: white;
 
-		    .global-navigation a {
-		    	color: lighten($primary-color, 20%);
-		    	border-color: lighten($primary-color, 20%);
-		    }
+		// Make it stick earlier - instascroll
+	    @media #{$medium-up} {
+	        // position: fixed; // on mobile - not fixed until scroll past main area
+	        // border-bottom: 1px solid #E6E6E6;
+	    }
 
-		    .active a {
-		    	color: $primary-color;
-		    }
-		}
+	    @media #{$small-only} {
+	        padding: rem-calc(5); // smaller on mobile
+	    }
 
+	    // .global-navigation a {
+	    // 	color: lighten($primary-color, 20%);
+	    // 	border-color: lighten($primary-color, 20%);
+	    // }
+
+	    // .active a {
+	    // 	color: $primary-color;
+	    // }
 	}
 }
 
@@ -78,28 +85,21 @@
 // has-logo State
 //-----------------------------------------------------------------
 
-.global-header {
-	@include transition('all');
-}
-
 .global-header .logo {
-	display: none;
-}
-
-.global-header.has-logo {
-	padding: 0;
-
-	.logo {
-		display: inline-block;
-		float: left;
-		margin-right: rem-calc(10);
-		padding: rem-calc(10 0);
+	@media #{$medium-up} {
+	    display: none;
 	}
 
-	.locations,
-	.global-navigation {
-		position: relative;
-		top: 36px; // magic
+	@media #{$small-only} {
+		text-align: center;
+		width: 100%;
+	    visibility: hidden; // we still want the height
+	}
+
+	img {
+		@media #{$small-only} {
+			width: 44px;
+		}
 	}
 }
 
@@ -107,8 +107,67 @@
 // Links
 //-----------------------------------------------------------------
 
+.header-mobile-menu {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+
+	@media #{$medium-up} {
+	    right: 40px;
+	    top: auto;
+	    bottom: 15px;
+	}
+}
+
 .global-header .hamburger {
-	@include hamburger($width: 34px, $gap: 8px, $thickness: 4px, $color: $primary-color);
+	@include hamburger($width: 25px, $gap: 5px, $thickness: 3px, $color: $primary-color);
+
+	@media #{$medium-up} {
+	    @include hamburger($width: 30px, $gap: 6px, $thickness: 4px, $color: $primary-color);
+	}
+}
+
+//-----------------------------------------------------------------
+// has-logo State (fixed)
+//-----------------------------------------------------------------
+
+.global-header.has-logo {
+	position: fixed;
+	padding: 0; // necessary to override above
+	border-bottom: 1px solid #E6E6E6;
+	background: white;
+
+	.logo {
+		visibility: visible;
+		display: inline-block;
+		float: left;
+		margin-right: rem-calc(10);
+		padding: rem-calc(10 0);
+	}
+
+	.global-navigation a {
+		color: lighten($primary-color, 20%);
+		border-color: lighten($primary-color, 20%);
+	}
+
+	.active a {
+		color: $primary-color;
+	}
+
+	.header-mobile-menu {
+		top: 50%;
+		margin-top: -10px;
+
+		@media #{$medium-up} {
+		    margin-top: -12px;
+		}
+	}
+
+	.locations,
+	.global-navigation {
+		position: relative;
+		top: 36px; // magic
+	}
 }
 
 //=========================================

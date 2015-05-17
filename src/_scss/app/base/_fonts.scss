@@ -37,6 +37,17 @@
 @font-face {
     font-family: 'Casion';
     font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ACasSem.eot');
+    src: local('☺'),
+        url('../fonts/ACasSem.woff') format('woff'),
+        url('../fonts/ACasSem.tff') format('truetype'),
+        url('../fonts/ACasSem.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Casion';
+    font-style: normal;
     font-weight: 700;
     src: url('../fonts/ACasBol.eot');
     src: local('☺'),

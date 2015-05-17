@@ -8,7 +8,7 @@
     "foundation": "zurb/bower-foundation#5.5.1",
     "foundation-icon-fonts": "zurb/foundation-icon-fonts",
     "isotope": "~2.1.0",
-    "jQuery.mmenu": "~4.7.4",
+    "jQuery.mmenu": "~5.2.0",
     "jquery.scrollTo": "~1.4.12",
     "jquery.transit": "~0.9.12",
     "magnific-popup": "https://github.com/dimsemenov/Magnific-Popup.git#master",

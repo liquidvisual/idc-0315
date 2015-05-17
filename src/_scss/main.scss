@@ -51,6 +51,7 @@
 
 @import "app/components/breadcrumbs";
 @import "app/components/buttons";
+@import "app/components/datepicker";
 @import "app/components/forms";
 @import "app/components/lists";
 @import "app/components/media";
@@ -82,7 +83,7 @@
 @import "../_bower_components/font-awesome/scss/font-awesome";
 @import "../_bower_components/slick.js/slick/slick";
 @import "liquidvisual/vendor/foundation-icons";
-// @import "liquidvisual/vendor/magnific-popup/main";
+@import "liquidvisual/vendor/magnific-popup/main";
 @import "liquidvisual/vendor/mmenu/main";
 @import "liquidvisual/vendor/nprogress";
 // @import "liquidvisual/vendor/prism";
