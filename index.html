@@ -25,7 +25,7 @@
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 </head>
 <body>
-    <div class="lv-super developerX">
+    <div class="lv-super dev-mode-enabled">
         <div class="lv-page">
 
             <!-- HEADER -->
@@ -34,63 +34,66 @@
 
 
 
-
 <div class="row outer-row">
-    <div class="medium-4 columns">
-        <ul class="show-for-large-up">
+    <div class="medium-8 large-5 columns">
+
+        <!-- Logo -->
+        <a class="logo animated bounceIn" href="#top" title="" itemprop="url">
+            <img width="90" src="/assets/img/content/logo@2x.png" alt="" itemprop="logo">
+        </a>
+
+        <!-- Locations -->
+        <ul class="locations show-for-medium-up">
             <li><a href="#">Adelaide</a></li>
             <li><a href="#">Australia</a></li>
             <li><a href="#">Worldwide</a></li>
         </ul>
 
-        <!-- Logo -->
-        <!-- <div class="logo" href="/" title="" itemprop="url">
-            <img width= "74" src="/img/content/logo@2x.png" alt="" itemprop="logo">
-        </div> -->
-
     </div>
-    <div class="medium-8 columns">
+    <div class="medium-4 large-7 columns">
+
+        <!-- Global Navigation -->
         <nav class="global-navigation show-for-large-up">
             
 
-<ul class="js-scroll-highlight">
+<ul class="js-scroll-highlight" data-magellan-expedition>
 
+	<!-- Displayed on MMenu only -->
 	<li class="hide-for-large-up"><a href="#">Adelaide</a></li>
 	<li class="hide-for-large-up"><a href="#">Australia</a></li>
 	<li class="hide-for-large-up"><a href="#">Worldwide</a></li>
 	<li class="hide-for-large-up Spacer"></li>
 
     
-        <li><a href="#">Home</a></li>
+        <li data-magellan-arrival="home"><a href="#home">Home</a></li>
     
-        <li><a href="#about-us">About Us</a></li>
+        <li data-magellan-arrival="about-us"><a href="#about-us">About Us</a></li>
     
-        <li><a href="#cinema">Cinema</a></li>
+        <li data-magellan-arrival="cinema"><a href="#cinema">Cinema</a></li>
     
-        <li><a href="#corporate">Corporate</a></li>
+        <li data-magellan-arrival="corporate"><a href="#corporate">Corporate</a></li>
     
-        <li><a href="#raves">Raves</a></li>
+        <li data-magellan-arrival="raves"><a href="#raves">Raves</a></li>
     
-        <li><a href="#contact-us">Contact Us</a></li>
+        <li data-magellan-arrival="contact-us"><a href="#contact-us">Contact Us</a></li>
     
 </ul>
         </nav>
 
-        <!-- Hamburger -->
-        <div class="header-mobile-menu hide-for-large-up right">
-            <a href="#"><span class="hamburger"><span class="hamburger-icon"></span></span></a>
-        </div>
-
     </div>
+
+    <!-- Hamburger -->
+    <div class="header-mobile-menu hide-for-large-up">
+        <a href=""><span class="hamburger"><span class="hamburger-icon"></span></span></a>
+    </div>
+
 </div>
-
-
             </header>
 
             
 
 <!-- HERO -->
-<div class="hero">
+<div id="home" class="hero" data-magellan-destination="home">
 
 	<!-- Awards -->
 	<div class="awards show-for-medium-up">
@@ -115,39 +118,38 @@
 		</div>
 	</div>
 
-</div> <!-- .hero -->
-
-<!-- SOCIAL NETWORKS -->
-<div class="social-networks">
-	<div class="row outer-row">
-		<div class="columns">
-			<ul class="lv-inline-list close-gaps text-center medium-text-right">
-				<li><a href=""><img width="30" src="/assets/img/template/email-icon@2x.png"></a></li>
-				<li><a href=""><img width="30" src="/assets/img/template/vimeo-icon@2x.png"></a></li>
-				<li><a href=""><img width="30" src="/assets/img/template/twitter-icon@2x.png"></a></li>
-				<li><a href=""><img width="30" src="/assets/img/template/facebook-icon@2x.png"></a></li>
-				<li><a href=""><img width="30" src="/assets/img/template/instagram-icon@2x.png"></a></li>
-			</ul>
+	<!-- Social Networks -->
+	<div class="social-networks">
+		<div class="row outer-row">
+			<div class="columns">
+				<ul class="lv-inline-list close-gaps text-center medium-text-right">
+					<li><a href=""><img width="30" src="/assets/img/template/email-icon@2x.png"></a></li>
+					<li><a href=""><img width="30" src="/assets/img/template/vimeo-icon@2x.png"></a></li>
+					<li><a href=""><img width="30" src="/assets/img/template/twitter-icon@2x.png"></a></li>
+					<li><a href=""><img width="30" src="/assets/img/template/facebook-icon@2x.png"></a></li>
+					<li><a href=""><img width="30" src="/assets/img/template/instagram-icon@2x.png"></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
+
+</div> <!-- .hero -->
 
 <!-- IMAGE SECTION -->
 <section class="section image-section"></section>
 
-<!-- Text Section -->
-<section class="section">
-	<div class="row">
+<!-- ABOUT US -->
+<!-- Multi Award Winning -->
+<section id="about-us" class="section" data-magellan-destination="about-us">
+	<div class="row outer-row">
 		<div class="medium-12 large-8 medium-centered columns text-center">
-			<p class="lead">Multi award winning Karl, Dawn and their I Do Cinema dream team <br>capture the most breathtaking images of your <strong><em>Forever Dream Wedding.</em></strong> <br>Using revolutionary state of the art cinematography starring... the bride and groom!</p>
+			<h1>Multi award winning Karl, Dawn and their I Do Cinema dream team <br>capture the most breathtaking images of your <strong><em>Forever Dream Wedding.</em></strong> <br>Using revolutionary state of the art cinematography starring... the bride and groom!</h1>
 		</div>
 	</div>
 </section>
 
-<!-- ************ ABOUT US ************ -->
-
 <!-- Bio Section -->
-<section id="about-us" class="section color-section">
+<section class="section color-section">
 	<div class="row outer-row">
 		<div class="large-9 medium-centered columns">
 
@@ -191,9 +193,9 @@
 
 		</div> <!-- .columns -->
 	</div> <!-- .row -->
-</section> <!-- #about-us -->
+</section>
 
-<!-- Text Section -->
+<!-- Contact Karl or Dawn -->
 <section class="section">
 	<div class="row">
 		<div class="medium-9 medium-centered columns text-center">
@@ -211,18 +213,10 @@
 	</div>
 </div>
 
-<!-- ************ CINEMA ************ -->
+<!-- CINEMA -->
 
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<!-- GALLERY SLIDER -->
-<section class="section">
+<section id="cinema" class="section" data-magellan-destination="cinema">
 	<div class="row">
 		<div class="medium-10 large-7 medium-centered columns">
 
@@ -233,32 +227,32 @@
 					
 						<div>
 							<h3>Carla &amp; James</h3>
-							<img width="100%" src="http://kenwheeler.github.io/slick/img/fonz1.png" alt="">
+							<iframe width="100%" src="https://www.youtube.com/embed/Koj8Hfqg0os" frameborder="0" allowfullscreen></iframe>
 						</div>
 					
 						<div>
 							<h3>Carla &amp; James</h3>
-							<img width="100%" src="http://kenwheeler.github.io/slick/img/fonz1.png" alt="">
+							<iframe width="100%" src="https://www.youtube.com/embed/Koj8Hfqg0os" frameborder="0" allowfullscreen></iframe>
 						</div>
 					
 						<div>
 							<h3>Carla &amp; James</h3>
-							<img width="100%" src="http://kenwheeler.github.io/slick/img/fonz1.png" alt="">
+							<iframe width="100%" src="https://www.youtube.com/embed/Koj8Hfqg0os" frameborder="0" allowfullscreen></iframe>
 						</div>
 					
 						<div>
 							<h3>Carla &amp; James</h3>
-							<img width="100%" src="http://kenwheeler.github.io/slick/img/fonz1.png" alt="">
+							<iframe width="100%" src="https://www.youtube.com/embed/Koj8Hfqg0os" frameborder="0" allowfullscreen></iframe>
 						</div>
 					
 						<div>
 							<h3>Carla &amp; James</h3>
-							<img width="100%" src="http://kenwheeler.github.io/slick/img/fonz1.png" alt="">
+							<iframe width="100%" src="https://www.youtube.com/embed/Koj8Hfqg0os" frameborder="0" allowfullscreen></iframe>
 						</div>
 					
 						<div>
 							<h3>Carla &amp; James</h3>
-							<img width="100%" src="http://kenwheeler.github.io/slick/img/fonz1.png" alt="">
+							<iframe width="100%" src="https://www.youtube.com/embed/Koj8Hfqg0os" frameborder="0" allowfullscreen></iframe>
 						</div>
 					
 				</div>
@@ -299,20 +293,28 @@
 				</div>
 			</div>
 
+			<!-- Swipe Hint Mobile -->
+			<div class="text-center show-for-small-only">
+				<img width="40" src="/assets/img/ui/swipe-right.svg" alt="Swipe Right">
+			</div>
+
 		</div>
 	</div> <!-- .row -->
 </section>
 
+<!-- Divider -->
+<div class="row outer-row">
+	<div class="columns">
+		<hr>
+	</div>
+</div>
 
-
-<!-- ************ CORPORATE ************ -->
-
-<!-- Text Section -->
-<section id="corporate" class="section">
+<!-- CORPORATE -->
+<section id="corporate" class="section corporate-section" data-magellan-destination="corporate">
 	<div class="row outer-row">
 		<div class="medium-9 medium-centered columns text-center">
-			<p class="lead">I Do Cinema Corporate</p>
-			<p>Create unique cinematic TV commercials, online videos and promotional events tailored to your business needs. <br>Talk to our multi award winning dream team of dedicated professionals today.</p>
+			<h2>I Do Cinema Corporate</h2>
+			<p class="leadX">Create unique cinematic TV commercials, online videos and promotional events tailored to your business needs. <br>Talk to our multi award winning dream team of dedicated professionals today.</p>
 			<p>Creative Directions | Cinematographers | Editors <br>
 			<strong>Karl</strong> <a href="tel:0412 683 143">0412 683 143</a> &nbsp;&nbsp;&nbsp; <strong>Dawn</strong> <a href="tel:0422 147 313">0422 147 313</a>
 			<br>
@@ -326,37 +328,49 @@
 
 	<!-- HORIZONTAL SLIDER -->
 	<div class="row">
-		<div class="medium-8 large-4 medium-centered columns">
+		<div class="small-12 medium-9 large-4 medium-centered columns">
 			<div class="slider multiple-items">
 				
 					<div>
-						<img width="100%" src="http://lorempixel.com/280/160?1">
-						<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						<a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+							<img width="100%" src="http://lorempixel.com/280/160?1" alt="Alt Here">
+							<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						</a>
 					</div>
 				
 					<div>
-						<img width="100%" src="http://lorempixel.com/280/160?2">
-						<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						<a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+							<img width="100%" src="http://lorempixel.com/280/160?2" alt="Alt Here">
+							<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						</a>
 					</div>
 				
 					<div>
-						<img width="100%" src="http://lorempixel.com/280/160?3">
-						<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						<a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+							<img width="100%" src="http://lorempixel.com/280/160?3" alt="Alt Here">
+							<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						</a>
 					</div>
 				
 					<div>
-						<img width="100%" src="http://lorempixel.com/280/160?4">
-						<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						<a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+							<img width="100%" src="http://lorempixel.com/280/160?4" alt="Alt Here">
+							<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						</a>
 					</div>
 				
 					<div>
-						<img width="100%" src="http://lorempixel.com/280/160?5">
-						<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						<a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+							<img width="100%" src="http://lorempixel.com/280/160?5" alt="Alt Here">
+							<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						</a>
 					</div>
 				
 					<div>
-						<img width="100%" src="http://lorempixel.com/280/160?6">
-						<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						<a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">
+							<img width="100%" src="http://lorempixel.com/280/160?6" alt="Alt Here">
+							<h4>Jenna Marie MKR - Little Miss Cupcake</h4>
+						</a>
 					</div>
 				
 			</div>
@@ -372,27 +386,39 @@
 	</div>
 </div>
 
-<!-- ************ RAVES ************ -->
-
-<section id="raves" class="section">
+<!-- RAVES -->
+<section id="raves" class="section" data-magellan-destination="raves">
 	<div class="row outer-row">
 		<div class="large-10 large-centered columns">
-			<ul class="medium-block-grid-2 large-block-grid-4">
-				<li>
+
+			<div class="row">
+				<div class="large-3 columns">
 					<h3>Christine &amp; Rockie</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco</p>
-				</li>
-				<li>
+
+					<h3>Eleni &amp; Alex</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+				<div class="large-3 columns">
 					<h3>Jessica &amp; Daniel</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi.</p>
-				</li>
-				<li>
+
+					<h3>Belal &amp; Abby</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco.</p>
+				</div>
+				<div class="large-3 columns">
 					<h3>Fiona &amp; Dion</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -401,8 +427,12 @@
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur.</p>
-				</li>
-				<li>
+
+					<h3>Carla &amp; James</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore.</p>
+				</div>
+				<div class="large-3 columns">
 					<h3>Jack &amp; Jill</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -410,44 +440,29 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</li>
-				<li>
-					<h3>Eleni &amp; Alex</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris.</p>
-				</li>
-				<li>
-					<h3>Belal &amp; Abby</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco.</p>
-				</li>
-				<li>
-					<h3>Carla &amp; James</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur.</p>
-				</li>
-			</ul>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </section>
 
-<!-- ************ CONTACT US ************ -->
+<!-- Divider -->
+<div class="row outer-row">
+	<div class="columns">
+		<hr>
+	</div>
+</div>
 
-<!-- Text Section -->
-<section id="contact-us" class="section contact-section">
+<!-- CONTACT US -->
+<section id="contact-us" class="section contact-section" data-magellan-destination="contact-us">
 	<div class="row outer-row">
 		<div class="large-9 columns">
 
 			<div class="row">
 				<div class="medium-6 medium-push-6 columns">
 
-					<!-- <h2>contact us</h2> -->
-					<p class="lead primary-color">contact us</p>
+					<h2>contact us</h2>
 					<p class="lead">Contact Dawn or Karl for more details.</p>
 
 					<div class="row collapse">
@@ -469,15 +484,19 @@
 						</div>
 					</div>
 
-					<p class="lead">Or fill in our contact form on
-					and we will be in touch as soon
-					as we can.</p>
+					<div class="row">
+						<div class="large-7 columns">
+							<p class="lead">Or fill in our contact form on
+							and we will be in touch as soon
+							as we can.</p>
+						</div>
+					</div>
 
 				</div> <!-- .columns -->
 				<div class="medium-6 medium-pull-6 columns">
 					
 
-<form data-abide novalidate method="post" action="#">
+<form data-abideX novalidate method="post" action="#">
 
 	<!-- Name -->
 	<div class="row">
@@ -485,19 +504,19 @@
 			<label>Name <span class="required">*</span></label>
 		</div>
 		<div class="large-10 columns">
-			<input name="name" class="radius" type="text" >
-			<small class="error">Your name is required.</small>
+			<input name="name" class="radius" type="text" required>
+			<!-- <small class="error">Your name is required.</small> -->
 		</div>
 	</div>
 
 	<!-- Wedding Date -->
 	<div class="row">
 		<div class="large-2 columns">
-			<label>Wedding Date <span class="required">*</span></label>
+			<label>Wedding Date&nbsp;<span class="required">*</span></label>
 		</div>
 		<div class="large-10 columns">
-			<input name="date" class="radius" type="date">
-			<small class="error">Please try again.</small>
+			<input class="ui-datepicker" name="date" class="radius" type="date">
+			<!-- <small class="error">Please try again.</small> -->
 		</div>
 	</div>
 
@@ -508,7 +527,7 @@
 		</div>
 		<div class="large-10 columns">
 			<input name="email" class="radius" type="email" required>
-			<small class="error">A valid email address is required.</small>
+			<!-- <small class="error">A valid email address is required.</small> -->
 		</div>
 	</div>
 
@@ -518,8 +537,8 @@
 			<label>Mobile <span class="required">*</span></label>
 		</div>
 		<div class="large-10 columns">
-			<input name="phone" class="radius" type="text">
-			<small class="error">Please try again.</small>
+			<input name="phone" class="radius" type="text" required>
+			<!-- <small class="error">Please try again.</small> -->
 		</div>
 	</div>
 
@@ -530,7 +549,7 @@
 		</div>
 		<div class="large-10 columns">
 			<textarea rows="10" class="radius" name="message" required></textarea>
-			<small class="error">Please enter a message.</small>
+			<!-- <small class="error">Please enter a message.</small> -->
 		</div>
 	</div>
 
@@ -560,11 +579,6 @@
 	<div class="large-9 columns">
 		<div class="row">
 			<div class="large-offset-1 columns">
-				<!-- <ul class="lv-inline-list small-gaps has-dividers">
-					<li><a href="+61 8 8361 2190">phone +61 8 8361 2190</a></li>
-					<li><a href="ido@idocinema.com.au">ido@idocinema.com.au</a></li>
-					<li><a href="ido@internode.on.net">ido@internode.on.net</a></li>
-				</ul> -->
 				<a href="+61 8 8361 2190">phone +61 8 8361 2190 &nbsp; | &nbsp;</a>
 				<a href="ido@idocinema.com.au">ido@idocinema.com.au &nbsp; | &nbsp;</a>
 				<a href="ido@internode.on.net">ido@internode.on.net</a>
@@ -574,7 +588,7 @@
 </div> <!-- .outer-row -->
 
 <!-- Footer Ring -->
-<div class="footer-ring show-for-medium-up"></div>
+<div class="footer-ring show-for-large-up"></div>
             </footer>
 
         </div> <!-- .lv-page -->
@@ -584,25 +598,26 @@
     <nav id="off-canvas-menu" class="off-canvas-menu" aria-hidden="true">
         
 
-<ul class="js-scroll-highlight">
+<ul class="js-scroll-highlight" data-magellan-expedition>
 
+	<!-- Displayed on MMenu only -->
 	<li class="hide-for-large-up"><a href="#">Adelaide</a></li>
 	<li class="hide-for-large-up"><a href="#">Australia</a></li>
 	<li class="hide-for-large-up"><a href="#">Worldwide</a></li>
 	<li class="hide-for-large-up Spacer"></li>
 
     
-        <li><a href="#">Home</a></li>
+        <li data-magellan-arrival="home"><a href="#home">Home</a></li>
     
-        <li><a href="#about-us">About Us</a></li>
+        <li data-magellan-arrival="about-us"><a href="#about-us">About Us</a></li>
     
-        <li><a href="#cinema">Cinema</a></li>
+        <li data-magellan-arrival="cinema"><a href="#cinema">Cinema</a></li>
     
-        <li><a href="#corporate">Corporate</a></li>
+        <li data-magellan-arrival="corporate"><a href="#corporate">Corporate</a></li>
     
-        <li><a href="#raves">Raves</a></li>
+        <li data-magellan-arrival="raves"><a href="#raves">Raves</a></li>
     
-        <li><a href="#contact-us">Contact Us</a></li>
+        <li data-magellan-arrival="contact-us"><a href="#contact-us">Contact Us</a></li>
     
 </ul>
     </nav>
