@@ -1,7 +1,7 @@
 /*
     HEADER.CSS
 
-    - Last updated: 17.05.15
+    - Last updated: 20.05.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -22,6 +22,10 @@
 
 	@media #{$large-up} {
 	    padding-top: rem-calc(50);
+	}
+
+	> .row {
+		@include transition('all');
 	}
 
 	&.is-sticky {
@@ -136,7 +140,11 @@
 	position: fixed;
 	padding: 0; // necessary to override above
 	border-bottom: 1px solid #E6E6E6;
-	background: white;
+	// background: white;
+
+	> .row {
+		background: white; // hack
+	}
 
 	.logo {
 		visibility: visible;
@@ -153,6 +161,14 @@
 
 	.active a {
 		color: $primary-color;
+	}
+
+	.active-override-off a {
+		color: lighten($primary-color, 20%) !important;
+	}
+
+	.active-override-on a {
+		color: $primary-color !important;
 	}
 
 	.header-mobile-menu {

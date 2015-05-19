@@ -1,9 +1,9 @@
 /*
-    SCROLL HIGHLIGHT - Last updated: 31.03.15
+    SCROLL HIGHLIGHT - Last updated: 19.05.15
 
     - Notes -
 
-     An alternative to Foundation's Magellan
+     An alternative to Foundation's Magellan:
      http://jsfiddle.net/mekwall/up4nu/
 */
 //-----------------------------------------------------------------
@@ -25,28 +25,37 @@ $(document).foundation({
 });
 
 //-----------------------------------------------------------------
-//
+// Valuable for reference
 //-----------------------------------------------------------------
 
-// menuItems.click(function(e){
-//   var href = $(this).attr("href");
-//   var offsetTop = href == "#top" ? 0 : $(href).offset().top-topMenuHeight+1;
+$('.global-header .logo').click(function(e){
+  // var href = $(this).attr("href");
+  // var offsetTop = href == "#top" ? 0 : $(href).offset().top-topMenuHeight+1;
 
-//   e.preventDefault();
+  e.preventDefault();
 
-//   $('html, body').stop().animate({ scrollTop: offsetTop }, 300);
-// });
+  $('html, body').stop().animate({ scrollTop: 0 }, 300);
+});
 
 //-----------------------------------------------------------------
 // Bind to scroll
 //-----------------------------------------------------------------
 
 $(window).scroll(function(){
-    var y = $(this).scrollTop();
-    if (y >= hero.height()) {
+    var scrollTop = $(this).scrollTop();
+
+    if (scrollTop >= hero.height()) {
        $('.js-global-header').addClass('has-logo');
     } else {
        $('.js-global-header').removeClass('has-logo');
+    }
+
+    if (scrollTop + $(window).height() >= $(document).height()-50) {
+      $('.global-navigation li').addClass('active-override-off');
+      $('.global-navigation li:last-child').addClass('active-override-on');
+    } else {
+      $('.global-navigation li:last-child').removeClass('active-override-on');
+      $('.global-navigation li').removeClass('active-override-off');
     }
 });
 

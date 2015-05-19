@@ -1,7 +1,7 @@
 /*
     GLOBAL.CSS
 
-    - Last updated: 17.05.15
+    - Last updated: 20.05.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -15,12 +15,7 @@ $page-padding: rem-calc(40) !default;
 //-----------------------------------------------------------------
 
 html, body {
-	//@media #{$small-only} {
-        //font-size: 90%;
-	//}
-    // background: red;
-
-    // height: auto;
+    height: auto;
 }
 
 .lv-super,

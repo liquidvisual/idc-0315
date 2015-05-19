@@ -1,7 +1,7 @@
 /*
     SOCIAL-NETWORKS.CSS
 
-    - Last updated: 17.05.15
+    - Last updated: 20.05.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -13,7 +13,7 @@
 
 .social-networks {
     position: absolute;
-    bottom: 25px;
+    bottom: -30px;
     width: 100%;
 
     @media #{$medium-up} {
