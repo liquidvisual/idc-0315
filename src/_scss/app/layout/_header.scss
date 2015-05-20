@@ -96,7 +96,7 @@
 	}
 
 	@media #{$small-only} {
-		text-align: center;
+		// text-align: center;
 		width: 100%;
 	    visibility: hidden; // we still want the height
 	}
