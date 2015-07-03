@@ -34,3 +34,19 @@ p.lead {
 	color: $primary-color;
 	margin-top: 0;
 }
+
+//=========================================
+// Pink Text
+//=========================================
+
+.pink-text {
+	font-family: "Futura";
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 1.5px;
+	color: $primary-color;
+
+	p {
+		font-size: rem-calc(15);
+	}
+}

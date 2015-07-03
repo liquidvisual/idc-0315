@@ -23,6 +23,12 @@
 	a {
 		margin: rem-calc(0 2);
 	}
+
+	img {
+		@media #{$large-up} {
+		    width: rem-calc(22);
+		}
+	}
 }
 
 //=========================================

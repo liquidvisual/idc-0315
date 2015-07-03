@@ -22,8 +22,13 @@
 	    border-bottom: 50px solid white; // offset for ipad fix
 	}
 
-	@media #{$medium-up} and (min-height: 768px) {
-		background-size: calc(1200px / 2); // image halved
+	@media #{$medium-up} {
+	    background-size: rem-calc(575);
+	}
+
+	// On landscape tablet - shrink the image to fit height wise
+	@media #{$medium-up} and (max-height: 768px) {
+		background-size: rem-calc(575 / 1.3); //calc(1200px / 2); // image halved
 	}
 }
 
@@ -37,5 +42,13 @@
 
 	ul li {
 		padding-bottom: 0;
+	}
+
+	img {
+		width: rem-calc(44);
+
+		@media #{$large-up} {
+		    width: rem-calc(35);
+		}
 	}
 }

@@ -32,27 +32,10 @@
 		display: table;
 		padding: 0;
 		padding: rem-calc(15 0 5 0);
-	    // background: rgba(255, 255, 255, 0.96);
-	    // background: white;
-
-		// Make it stick earlier - instascroll
-	    @media #{$medium-up} {
-	        // position: fixed; // on mobile - not fixed until scroll past main area
-	        // border-bottom: 1px solid #E6E6E6;
-	    }
 
 	    @media #{$small-only} {
 	        padding: rem-calc(5); // smaller on mobile
 	    }
-
-	    // .global-navigation a {
-	    // 	color: lighten($primary-color, 20%);
-	    // 	border-color: lighten($primary-color, 20%);
-	    // }
-
-	    // .active a {
-	    // 	color: $primary-color;
-	    // }
 	}
 }
 
@@ -65,8 +48,12 @@
 		list-style: none;
 		margin: 0;
 		overflow: hidden;
-		font-size: rem-calc(14);
+		font-size: rem-calc(12);
 		// background: orange;
+
+		@media #{$xlarge-up} {
+		    font-size: rem-calc(15);
+		}
 
 		> li {
 			display: inline-block;
@@ -82,6 +69,11 @@
 			font-weight: normal;
 			padding: rem-calc(0 10);
 			border-right: 1px solid $primary-color;
+			letter-spacing: 1.5px;
+
+			@media #{$xlarge-up} {
+			    padding: rem-calc(0 15);
+			}
 		}
 	}
 }
@@ -140,7 +132,7 @@
 	position: fixed;
 	padding: 0; // necessary to override above
 	border-bottom: 1px solid #E6E6E6;
-	// background: white;
+	background: white;
 
 	> .row {
 		background: white; // hack
