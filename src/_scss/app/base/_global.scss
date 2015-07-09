@@ -44,10 +44,10 @@ html {
 //-----------------------------------------------------------------
 
 .row {
-    @media #{$medium-up}  { max-width: calc(upper-bound($medium-range)       + #{$page-padding * 2};  }
-    @media #{$large-up}   { max-width: calc(upper-bound($large-range)        + #{$page-padding * 2};  }
-    @media #{$xlarge-up}  { max-width: calc(#{upper-bound($xlarge-range)}    + #{$page-padding * 2}); }
-    @media #{$xxlarge-up} { max-width: calc(#{upper-bound($xxlarge-range)}   + #{$page-padding * 2}); }
+    @media #{$medium-up}  { max-width: calc(#{upper-bound($medium-range)}  + #{$page-padding * 2}); }
+    @media #{$large-up}   { max-width: calc(#{upper-bound($large-range)}   + #{$page-padding * 2}); }
+    @media #{$xlarge-up}  { max-width: calc(#{upper-bound($xlarge-range)}  + #{$page-padding * 2}); }
+    @media #{$xxlarge-up} { max-width: calc(#{upper-bound($xxlarge-range)} + #{$page-padding * 2}); }
 
     &.outer-row {
         padding: rem-calc(0 5);

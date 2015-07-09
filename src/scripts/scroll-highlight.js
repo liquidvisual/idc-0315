@@ -45,9 +45,9 @@ $(window).scroll(function(){
     var scrollTop = $(this).scrollTop();
 
     if (scrollTop >= hero.height()) {
-       $('.js-global-header').addClass('has-logo');
+       $('.js-global-header').addClass('has-logo animated fadeIn');
     } else {
-       $('.js-global-header').removeClass('has-logo');
+       $('.js-global-header').removeClass('has-logo animated fadeIn');
     }
 
     if (scrollTop + $(window).height() >= $(document).height()-50) {

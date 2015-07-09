@@ -12,7 +12,12 @@
 //-----------------------------------------------------------------
 
 .section {
-	padding: rem-calc(60 0);
+    position: relative;
+	padding: rem-calc(30 0);
+
+    @media #{$medium-up} {
+        padding: rem-calc(60 0);
+    }
 }
 
 .color-section {

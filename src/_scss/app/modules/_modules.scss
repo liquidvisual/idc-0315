@@ -10,6 +10,19 @@
 //-----------------------------------------------------------------
 //
 //-----------------------------------------------------------------
+
+.ring-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1228px;
+    height: 1497px;
+    background: url(../img/template/ring-bg.png) no-repeat bottom right;
+    background-size: contain;
+    z-index: -1;
+    opacity: 0.8;
+}
+
 //=========================================
 //
 //=========================================

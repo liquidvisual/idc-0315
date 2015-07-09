@@ -1,7 +1,7 @@
 /*
     FONTS.CSS
 
-    - Last updated: 22.03.15
+    - Last updated: 09.07.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -23,49 +23,49 @@
 // Adobe Casion
 //-----------------------------------------------------------------
 
-@font-face {
-    font-family: 'Casion';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/ACasReg.eot');
-    src: local('☺'),
-        url('../fonts/ACasReg.woff') format('woff'),
-        url('../fonts/ACasReg.tff') format('truetype'),
-        url('../fonts/ACasReg.svg') format('svg');
-}
+// @font-face {
+//     font-family: 'Casion';
+//     font-style: normal;
+//     font-weight: 300;
+//     src: url('../fonts/ACasReg.eot');
+//     src: local('☺'),
+//         url('../fonts/ACasReg.woff') format('woff'),
+//         url('../fonts/ACasReg.tff') format('truetype'),
+//         url('../fonts/ACasReg.svg') format('svg');
+// }
 
-@font-face {
-    font-family: 'Casion';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/ACasSem.eot');
-    src: local('☺'),
-        url('../fonts/ACasSem.woff') format('woff'),
-        url('../fonts/ACasSem.tff') format('truetype'),
-        url('../fonts/ACasSem.svg') format('svg');
-}
+// @font-face {
+//     font-family: 'Casion';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url('../fonts/ACasSem.eot');
+//     src: local('☺'),
+//         url('../fonts/ACasSem.woff') format('woff'),
+//         url('../fonts/ACasSem.tff') format('truetype'),
+//         url('../fonts/ACasSem.svg') format('svg');
+// }
 
-@font-face {
-    font-family: 'Casion';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/ACasBol.eot');
-    src: local('☺'),
-        url('../fonts/ACasBol.woff') format('woff'),
-        url('../fonts/ACasBol.tff') format('truetype'),
-        url('../fonts/ACasBol.svg') format('svg');
-}
+// @font-face {
+//     font-family: 'Casion';
+//     font-style: normal;
+//     font-weight: 700;
+//     src: url('../fonts/ACasBol.eot');
+//     src: local('☺'),
+//         url('../fonts/ACasBol.woff') format('woff'),
+//         url('../fonts/ACasBol.tff') format('truetype'),
+//         url('../fonts/ACasBol.svg') format('svg');
+// }
 
-@font-face {
-    font-family: 'Casion';
-    font-style: italic;
-    font-weight: 700;
-    src: url('../fonts/ACasBolIta.eot');
-    src: local('☺'),
-        url('../fonts/ACasBolIta.woff') format('woff'),
-        url('../fonts/ACasBolIta.tff') format('truetype'),
-        url('../fonts/ACasBolIta.svg') format('svg');
-}
+// @font-face {
+//     font-family: 'Casion';
+//     font-style: italic;
+//     font-weight: 700;
+//     src: url('../fonts/ACasBolIta.eot');
+//     src: local('☺'),
+//         url('../fonts/ACasBolIta.woff') format('woff'),
+//         url('../fonts/ACasBolIta.tff') format('truetype'),
+//         url('../fonts/ACasBolIta.svg') format('svg');
+// }
 
 //-----------------------------------------------------------------
 // Futura
@@ -96,7 +96,7 @@
 @font-face {
     font-family: 'Futura';
     font-style: italic;
-    font-weight: 700;
+    font-weight: 300;
     src: url('../fonts/FuturBooObl.eot');
     src: local('☺'),
         url('../fonts/FuturBooObl.woff') format('woff'),

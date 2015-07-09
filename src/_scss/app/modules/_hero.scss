@@ -23,7 +23,7 @@
 	}
 
 	@media #{$medium-up} {
-	    background-size: rem-calc(575);
+	    background-size: rem-calc(565);
 	}
 
 	// On landscape tablet - shrink the image to fit height wise
@@ -39,6 +39,7 @@
 .hero .awards {
 	position: absolute;
 	bottom: 30px;
+	z-index: 1;
 
 	ul li {
 		padding-bottom: 0;

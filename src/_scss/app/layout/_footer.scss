@@ -12,28 +12,9 @@
 //-----------------------------------------------------------------
 
 .global-footer {
-	position: relative;
-	padding-bottom: 20px;
-
-	.footer-ring {
-	    position: absolute;
-	    right: 0;
-	    bottom: 0;
-	    background: url(../img/template/footer-ring@2x.png) no-repeat bottom;
-	    background-size: contain;
-	    z-index: -1;
-	    opacity: 0.3;
-
-	    @media #{$xxlarge-up} {
-	        opacity: 1;
-	    }
-
-	    @media #{$large-up} {
-	        width: 872px;
-	        height: 1294px;
-	        // height: 747px;
-	    }
-	}
+	position: absolute;
+	bottom: rem-calc(60);
+	width: 100%;
 
 	a {
 		font-family: "Futura";

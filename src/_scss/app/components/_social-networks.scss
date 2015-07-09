@@ -32,6 +32,22 @@
 }
 
 //=========================================
+// Context
+//=========================================
+
+.global-footer .social-networks {
+	position: relative;
+	bottom: 0; // necessary
+
+	@media #{$small-only} {
+	    bottom: -30px; // mobile precise
+	}
+
+    @media #{$large-up} {
+    	bottom: 5px;
+    }
+}
+//=========================================
 //
 //=========================================
 

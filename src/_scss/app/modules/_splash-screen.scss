@@ -1,41 +1,36 @@
 /*
-    GALLERY.CSS
+    SPLASH-SCREEN.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 03.07.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Gallery
+// Hero
 //-----------------------------------------------------------------
 
-.gallery-slider {
-	h4, h3 {
-		@extend .pink-text;
-		@media #{$small-only} {
-		    display: none; // we're use the swipe hint instead
-		}
-	}
+.splash-screen {
+	background-image: url(/img/template/pink-bg.jpg);
+	height: 100vh;
 
-	.slider-for h3 {
-		display: block; // cheap override
-	}
-
-	iframe {
-		min-height: 200px;
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url(/img/content/logo.svg) no-repeat center 30%;
+		background-size: rem-calc(200);
 
 		@media #{$medium-up} {
-		    height: 500px;
-		}
-
-		@media #{$xxlarge-up} {
-		    height: 760px;
+		    background-size: rem-calc(510);
+		    background-position: center center;
 		}
 	}
 }
-
 
 //=========================================
 //

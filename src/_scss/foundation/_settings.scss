@@ -151,11 +151,17 @@ $body-font-color: #777; //#929497;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
+// $small-range: (0em, 40em);              // 640
+// $medium-range: (40.063em, 64em);        // 641-1024
+// $large-range: (64.063em, 80em);         // 1025-1280
+// $xlarge-range: (80.063em, 90em);        // 1281-1440
+// $xxlarge-range: (90.063em, 110.000em);  // 1441-1760
+
 $small-range: (0em, 40em);              // 640
-$medium-range: (40.063em, 64em);        // 641-1024
-$large-range: (64.063em, 80em);         // 1025-1280
-$xlarge-range: (80.063em, 90em);        // 1281-1440
-$xxlarge-range: (90.063em, 110.000em);  // 1441-1760
+$medium-range: (40.063em, 80em);        // 641-1280
+$large-range: (80.063em, 90em);         // 1281-1440
+$xlarge-range: (90.063em, 110.000em);   // 1441-1760
+$xxlarge-range: (110.063em);            // 1761+
 
 $screen: "only screen";
 
@@ -1343,7 +1349,7 @@ $input-box-shadow: none; //inset 0 1px 2px rgba(0,0,0,0.1);
 // $has-tip-cursor-type: help;
 
 // $tooltip-padding: rem-calc(12);
-// $tooltip-bg: $oil;
+$tooltip-bg: $primary-color;// rgba(black, 0.8); //$oil;
 // $tooltip-font-size: rem-calc(14);
 // $tooltip-font-weight: $font-weight-normal;
 // $tooltip-font-color: $white;

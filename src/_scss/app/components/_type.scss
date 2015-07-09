@@ -1,7 +1,7 @@
 /*
     TYPE.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 09.07.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -11,18 +11,13 @@
 // Type
 //-----------------------------------------------------------------
 
+a {
+	@include transition('color');
+}
+
 h3, h4, h5, h6 {
 	color: $primary-color;
 	font-family: $font-family-serif;
-}
-
-// refactor
-p.lead {
-	font-size: $paragraph-font-size;
-
-	@media #{$medium-up} {
-	    font-size: rem-calc(30);
-	}
 }
 
 //=========================================
@@ -36,17 +31,26 @@ p.lead {
 }
 
 //=========================================
+// Paragraphs
+//=========================================
+
+p.lead {
+	font-size: $paragraph-font-size;
+
+	@media #{$medium-up} {
+	    font-size: rem-calc(25); //30
+	}
+}
+
+//=========================================
 // Pink Text
 //=========================================
 
 .pink-text {
-	font-family: "Futura";
-	text-transform: uppercase;
+	font-family: $font-family-sans-serif;
+	font-size: rem-calc(15);
 	font-weight: normal;
-	letter-spacing: 1.5px;
 	color: $primary-color;
-
-	p {
-		font-size: rem-calc(15);
-	}
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
 }

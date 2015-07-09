@@ -39,10 +39,17 @@ $gold-color: #C1AE9B;
 .lv-super .slick-next:before,
 .lv-super .slick-prev:before {
 	font-family: "FontAwesome";
-	color: $gold-color;
-	font-size: rem-calc(50);
+	color: #F4ADCC;//$primary-color; //$gold-color;
+	font-size: rem-calc(60);
 	line-height: 50px;
-	// background: red;
+}
+
+.lv-super .slick-next {
+	right: -40px;
+}
+
+.lv-super .slick-prev {
+	left: -40px;
 }
 
 .lv-super .slick-next:before {
@@ -58,7 +65,8 @@ $gold-color: #C1AE9B;
 //-----------------------------------------------------------------
 
 .slider h4 {
-	color: #8A6D4D;
+	@extend .pink-text;
+	color: #8A6D4D !important; // arg
 }
 
 //-----------------------------------------------------------------

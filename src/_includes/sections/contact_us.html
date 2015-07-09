@@ -1,31 +1,31 @@
 <section id="contact-us" class="section contact-section">
 	<div class="row outer-row">
-		<div class="large-9 columns">
+		<div class="large-8 large-push-4 columns text-center pink-text">
 
-			<div class="row">
-				<div class="medium-6 medium-push-6 columns">
+			<p class="hide-for-large-up"><img width="50" alt="Ring" src="/img/template/ring-bg.png"></p>
 
-					<p class="lead">Contact Dawn or Karl for more details.</p>
-
-					<p>
-						Karl <a href="tel:{{ settings.mobile_karl }}">{{ settings.mobile_karl }}</a> /
-						Dawn <a href="tel:{{ settings.mobile_karl }}">{{ settings.mobile_karl }}</a>
-					</p>
-
-					<p>
-						<a href="tel:{{settings.phone}}">{{settings.phone}}</a> |
-						<a href="tel:{{settings.email_1}}">{{settings.email_1}}</a> |
-						<a href="tel:{{settings.email_2}}">{{settings.email_2}}</a>
-					</p>
-
-					<p>Or fill in our contact form on and we will<br> be in touch as soon as we can.</p>
-
-				</div> <!-- .columns -->
-				<div class="medium-6 medium-pull-6 columns">
-					{% include simple_form_traditional.html %}
-				</div>
-			</div> <!-- .row -->
-
+			<p><strong>Contact Dawn or Karl for more details.</strong></p>
+			<p>
+				Karl <a href="tel:{{ settings.mobile_karl }}">{{ settings.mobile_karl }}</a> /
+				Dawn <a href="tel:{{ settings.mobile_karl }}">{{ settings.mobile_karl }}</a>
+			</p>
+			<p>
+				<a href="tel:{{settings.phone}}">{{settings.phone}}</a> |
+				<a href="tel:{{settings.email_1}}">{{settings.email_1}}</a> |
+				<a href="tel:{{settings.email_2}}">{{settings.email_2}}</a>
+			</p>
+			<p>Or fill in our contact form on and we will<br> be in touch as soon as we can.</p>
+		</div>
+		<div class="large-4 large-pull-8 columns">
+			{% include simple_form_traditional.html %}
 		</div> <!-- .columns -->
 	</div> <!-- .outer-row -->
+
+	<!-- Footer Ring -->
+	<div class="row outer-row">
+		<div class="columns">
+			<div class="ring-bg show-for-large-up"></div>
+		</div>
+	</div>
+
 </section>

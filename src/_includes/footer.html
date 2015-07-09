@@ -1,16 +1,21 @@
 {% assign settings = site.data.settings %}
 
-<div class="row outer-row">
-	<div class="large-9 columns">
-		<div class="row">
-			<div class="large-offset-1 columns">
-				<a href="{{settings.phone}}">phone {{settings.phone}} &nbsp; | &nbsp;</a>
-				<a href="{{settings.email_1}}">{{settings.email_1}} &nbsp; | &nbsp;</a>
-				<a href="{{settings.email_2}}">{{settings.email_2}}</a>
+<div class="footer-body">
+	<div class="row outer-row">
+
+		<div class="medium-7 columns text-center medium-text-left">
+			<a href="{{settings.phone}}">phone {{settings.phone}} &nbsp; | &nbsp;</a>
+			<a href="{{settings.email_1}}">{{settings.email_1}} &nbsp; | &nbsp;</a>
+			<a href="{{settings.email_2}}">{{settings.email_2}}</a>
+		</div>
+
+		<div class="medium-5 columns">
+
+			<!-- Social Networks -->
+			<div class="social-networks">
+				{% include social_networks.html %}
 			</div>
+
 		</div>
 	</div>
-</div> <!-- .outer-row -->
-
-<!-- Footer Ring -->
-<div class="footer-ring show-for-large-up"></div>
+</div>

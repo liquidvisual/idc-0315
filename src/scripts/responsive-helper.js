@@ -17,9 +17,9 @@
     //==================================================
 
     var small  = 640;
-    var medium = 1024;
-    var large  = 1280;
-    var xlarge = 1440;
+    var medium = 1280;
+    var large  = 1440;
+    var xlarge = 1760;
 
     //==================================================
     // Responsive Helper
