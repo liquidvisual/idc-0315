@@ -16,6 +16,10 @@
 	bottom: rem-calc(60);
 	width: 100%;
 
+	@media #{$medium-up} {
+	    bottom: rem-calc(20);
+	}
+
 	a {
 		font-family: "Futura";
 		font-size: rem-calc(16);

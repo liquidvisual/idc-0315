@@ -7,9 +7,6 @@
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
-
-$gold-color: #C1AE9B;
-
 //-----------------------------------------------------------------
 //
 //-----------------------------------------------------------------
@@ -39,7 +36,7 @@ $gold-color: #C1AE9B;
 .lv-super .slick-next:before,
 .lv-super .slick-prev:before {
 	font-family: "FontAwesome";
-	color: #F4ADCC;//$primary-color; //$gold-color;
+	color: lighten($gold-color, 30%);
 	font-size: rem-calc(60);
 	line-height: 50px;
 }
@@ -66,7 +63,7 @@ $gold-color: #C1AE9B;
 
 .slider h4 {
 	@extend .pink-text;
-	color: #8A6D4D !important; // arg
+	color: $gold-color !important; // arg
 }
 
 //-----------------------------------------------------------------

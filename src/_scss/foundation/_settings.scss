@@ -98,6 +98,7 @@ $font-weight-normal: 300;
 // We use these as default colors throughout
 $primary-color: #F06EAA; //#EC72AA;
 $secondary-color: #eb74a9;
+$gold-color: #8A6D4D;
 $alert-color: #E34253;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -213,8 +214,8 @@ $header-font-color: $body-font-color; //$primary-color;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(32);
-$h2-font-size: rem-calc(32);
+$h1-font-size: rem-calc(20);
+$h2-font-size: rem-calc(20);
 $h3-font-size: rem-calc(22); // because font-face is tiny
 $h4-font-size: rem-calc(20);
 // $h5-font-size: rem-calc(18);
@@ -635,7 +636,7 @@ $paragraph-font-size: rem-calc(15);
 // $input-font-size: rem-calc(14);
 // $input-bg-color: $white;
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
-$input-border-color: $primary-color; //scale-color($white, $lightness: -20%);
+$input-border-color: lighten($primary-color, 15%); //scale-color($white, $lightness: -20%);
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
 // $input-border-style: solid;
 // $input-border-width: 1px;

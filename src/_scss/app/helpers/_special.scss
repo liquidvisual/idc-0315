@@ -15,6 +15,23 @@
     color: $primary-color;
 }
 
+// .no-margin-bottom {
+// 	margin-bottom: 0;
+// 	p {
+// 		margin-bottom: 0;
+// 	}
+// }
+
 //=========================================
 //
 //=========================================
+
+// Used on accrediation text - horrible
+
+.section-padding-bottom {
+    padding-bottom: rem-calc(55); // magic
+
+    p {
+        margin-bottom: 0;
+    }
+}
