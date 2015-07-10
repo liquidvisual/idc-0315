@@ -24,20 +24,8 @@ $(window).load(function() {
 // }
 
 //-----------------------------------------------------------------
-// Testimonial Slider
-//-----------------------------------------------------------------
-
-$('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2
-});
-
-//-----------------------------------------------------------------
 // Kickstart Foundation / Touch Conditionals
 //-----------------------------------------------------------------
-
-// var touchEvent = TOUCH_ENABLED ? "touchstart" : "click";
 
 $('#off-canvas-menu').mmenu({ "offCanvas": { "position": "right" }});
 
@@ -65,21 +53,6 @@ if (IS_MOBILE_SAFARI) {
     // listen to portrait/landscape changes
     window.addEventListener('orientationchange', fixMobileSafariViewport, true);
     fixMobileSafariViewport();
-}
-
-//-----------------------------------------------------------------
-//
-//-----------------------------------------------------------------
-
-if (TOUCH_ENABLED) {
-    // Make Accordion jump to the top of the heading on mobile
-    // http://foundation.zurb.com/forum/posts/1316-accordion-jump-to-top-when-active
-    /*$(document).foundation('accordion', {
-        callback: function (el){
-            var containerPos = $(el).parent().offset().top;
-            $('html, body').animate({ scrollTop: containerPos }, 300);
-        }
-    });*/
 }
 
 //-----------------------------------------------------------------

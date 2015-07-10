@@ -17,10 +17,10 @@ fax: (05) 555 555
 address: "..."
 
 # Social Networks
-facebook: ""
-vimeo: ""
-twitter: ""
-instagram: ""
+facebook: "#"
+vimeo: "#"
+twitter: "#"
+instagram: "#"
 
 # Google Map
 google_map: ""
