@@ -46,6 +46,7 @@ p.lead {
 // Pink Text
 //=========================================
 
+.gold-text,
 .pink-text {
 	font-family: $font-family-sans-serif;
 	font-size: rem-calc(12);
@@ -53,4 +54,12 @@ p.lead {
 	color: $primary-color;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
+
+	p {
+		font-size: rem-calc(12); // fix
+	}
+}
+
+.gold-text {
+	font-size: $h2-font-size;
 }
