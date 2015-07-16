@@ -44,7 +44,9 @@ $('.global-header .logo').click(function(e){
 $(window).scroll(function(){
     var scrollTop = $(this).scrollTop();
 
-    if (scrollTop >= hero.height()) {
+    //scrollTop >= hero.height() - restore normal
+
+    if (scrollTop >= 300) {
        $('.js-global-header').addClass('has-logo animated fadeIn');
     } else {
        $('.js-global-header').removeClass('has-logo animated fadeIn');
@@ -75,8 +77,11 @@ var lastId,
       if (item.length) { return item; }
     });
 
+//-----------------------------------------------------------------
 // Bind click handler to menu items
 // so we can get a fancy scroll animation
+//-----------------------------------------------------------------
+
 menuItems.click(function(e){
   var href = $(this).attr("href"),
       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;

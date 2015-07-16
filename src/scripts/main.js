@@ -31,7 +31,7 @@ $('#off-canvas-menu').mmenu({ "offCanvas": { "position": "right" }});
 
 var API = $("#off-canvas-menu").data("mmenu");
 
-$('.hamburger').bind('click', function(e) {
+$('.header-mobile-menu').bind('click', function(e) {
     e.preventDefault();
     API.open();
 });

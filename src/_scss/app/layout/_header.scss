@@ -108,6 +108,14 @@
 	top: 15px;
 	right: 15px;
 
+	a {
+		display: block;
+
+		&:active .hamburger-icon {
+			background: lighten($primary-color, 10%);
+		}
+	}
+
 	@media #{$medium-up} {
 	    right: 40px;
 	    top: auto;
