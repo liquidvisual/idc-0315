@@ -57,11 +57,14 @@
 			display: inline-block;
 			float: left;
 
-			&:last-child a {
+			&:last-child a,
+			&:last-child span {
 				border: 0;
 			}
 		}
-		a {
+
+		a,
+		span {
 			@extend .pink-text;
 
 			padding: rem-calc(0 10);

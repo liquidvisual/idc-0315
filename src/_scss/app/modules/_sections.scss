@@ -25,7 +25,7 @@
 }
 
 .image-section {
-	height: 80vh;
+	height: 50vh;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url(../img/content/newly-weds-bg.jpg);
@@ -35,7 +35,6 @@
             background-size: cover;
 
     @media #{$large-up} {
-        height: 100vh;
         background-attachment: fixed; // issues on devices
     }
 }
