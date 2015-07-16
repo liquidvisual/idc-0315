@@ -1,6 +1,6 @@
 {% assign form_title = include.title %}
 
-<form data-abideX novalidate method="post" action="#">
+<form data-abide novalidate method="post" action="#">
 
 	<!-- Name -->
 	<div class="row">
@@ -9,7 +9,7 @@
 		</div>
 		<div class="large-10 columns">
 			<input name="name" class="radius" type="text" required>
-			<!-- <small class="error">Your name is required.</small> -->
+			<small class="error">Your name is required.</small>
 		</div>
 	</div>
 
@@ -19,8 +19,8 @@
 			<label>Wedding Date&nbsp;<span class="required">*</span></label>
 		</div>
 		<div class="large-10 columns">
-			<input class="ui-datepicker" name="date" type="date">
-			<!-- <small class="error">Please try again.</small> -->
+			<input class="ui-datepicker" name="date" type="date" pattern="/*">
+			<small class="error">Please try again.</small>
 		</div>
 	</div>
 
@@ -31,7 +31,7 @@
 		</div>
 		<div class="large-10 columns">
 			<input name="email" class="radius" type="email" required>
-			<!-- <small class="error">A valid email address is required.</small> -->
+			<small class="error">A valid email address is required.</small>
 		</div>
 	</div>
 
@@ -42,7 +42,7 @@
 		</div>
 		<div class="large-10 columns">
 			<input name="phone" class="radius" type="text" required>
-			<!-- <small class="error">Please try again.</small> -->
+			<small class="error">Please try again.</small>
 		</div>
 	</div>
 
@@ -53,7 +53,7 @@
 		</div>
 		<div class="large-10 columns">
 			<textarea rows="10" class="radius" name="message" required></textarea>
-			<!-- <small class="error">Please enter a message.</small> -->
+			<small class="error">Please enter a message.</small>
 		</div>
 	</div>
 
