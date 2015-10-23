@@ -25,7 +25,8 @@ module.exports = function (grunt) {
       dist: 'dist',
       assets: 'dist/assets',
       port: '9292',
-      git: 'git@github.com:liquidvisual/idc-0315.git',
+      // git: 'git@github.com:liquidvisual/idc-0315.git',
+      git: 'https://github.com/liquidvisual/idc-0315.git',
       // IMPORTANT: Set a baseurl on line 364
     },
     //-----------------------------------------------------
