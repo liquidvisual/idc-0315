@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: base__homepage
 title: Home
 permalink: /
 ---

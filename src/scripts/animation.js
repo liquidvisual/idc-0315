@@ -9,20 +9,20 @@
 // Variables
 //-----------------------------------------------------------------
 
-var animationEnabled = $('.animation-enabled').length;
+// var animationEnabled = $('.animation-enabled').length;
 
 //-----------------------------------------------------------------
 // Intro Animation
 //-----------------------------------------------------------------
 
-$(window).load(function() {
+// $(window).load(function() {
 
-	if (animationEnabled) {
-		$('.hero').transition({ opacity: 100, delay: 0 }, 2000);
-		$('.global-header').transition({ opacity: 100, delay: 1500 }, 1500);
-		$('.awards, .social-networks').transition({ opacity: 100, delay: 2000 }, 1500);
-	}
-});
+// 	if (animationEnabled) {
+// 		$('.hero').transition({ opacity: 100, delay: 0 }, 2000);
+// 		$('.global-header').transition({ opacity: 100, delay: 1500 }, 1500);
+// 		$('.awards, .social-networks').transition({ opacity: 100, delay: 2000 }, 1500);
+// 	}
+// });
 
 //==================================================
 //

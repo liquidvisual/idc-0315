@@ -19,10 +19,6 @@ $(window).load(function() {
     NProgress.done();
 });
 
-// window.onload = function(){
-//     // NProgress.done();
-// }
-
 //-----------------------------------------------------------------
 // Kickstart Foundation / Touch Conditionals
 //-----------------------------------------------------------------
@@ -56,26 +52,8 @@ if (IS_MOBILE_SAFARI) {
 }
 
 //-----------------------------------------------------------------
-// <= IE8 Caution Message
+//
 //-----------------------------------------------------------------
-
-//$('.lv-alert .close-btn').click(function(){$(this).parent().hide();});
-
-//-----------------------------------------------------------------
-// +++ HELPERS +++
-//-----------------------------------------------------------------
-//==================================================
-// Developer: COMMAND+S for screen width
-//==================================================
-
-$(document).keypress(function(event) {
-    if (event.which == 115 && (event.ctrlKey||event.metaKey)||(event.which == 19)) {
-        event.preventDefault();
-        alert("(w) "+$(window).width()+" (h) "+$(window).height());
-        return false;
-    }
-    return true;
-});
 //==================================================
 //
 //==================================================
