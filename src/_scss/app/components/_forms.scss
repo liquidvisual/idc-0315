@@ -15,6 +15,16 @@
 	color: $alert-color;
 }
 
+form {
+	@media #{$small-only} {
+	    padding-top: rem-calc(30);
+	}
+}
+
+form label {
+	min-width: rem-calc(70);
+}
+
 //=========================================
 //
 //=========================================

@@ -1,184 +1,66 @@
 /*
     HEADER.CSS
 
-    - Last updated: 09.07.15
+    - Last updated: 23.01.19
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
-// Variables
+// VARIABLES
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Header
+// LOGO
 //-----------------------------------------------------------------
 
 .global-header {
-	// @include transition('all');
-	position: absolute;
-	top: 0;
-	width: 100%;
-	padding-top: rem-calc(30);
-	z-index: 1;
-
-	// -webkit-transition-duration: .1s !important;
-	// transition-duration: .1s !important;
-
-	-webkit-animation-duration: 0.5s;
-	transition-animation-delay: 0;
-
-	-vendor-animation-iteration-count: infinite;
-
-	@media #{$large-up} {
-	    padding-top: rem-calc(50);
+	@media #{$small-only} {
+	    margin-bottom: rem-calc(10);
 	}
 
-	&.is-sticky {
-		display: table;
-		padding: 0;
-		padding: rem-calc(15 0 5 0);
+	.logo {
+		display: block;
+		padding: rem-calc(10 0);
+		text-align: center;
 
-	    @media #{$small-only} {
-	        padding: rem-calc(5); // smaller on mobile
-	    }
+		@media #{$medium-up} {
+			display: inline-block;
+		    float: left;
+		    margin-right: rem-calc(10);
+		}
 	}
 }
 
 //-----------------------------------------------------------------
-// Links
+// LINKS
 //-----------------------------------------------------------------
 
 .global-header {
-	ul {
+	ul.locations {
+		display: flex;
 		list-style: none;
-		margin: 0;
-		overflow: hidden;
-		// background: orange;
+		margin: 0; // reset
 
-		> li {
-			display: inline-block;
-			float: left;
-
-			&:last-child a,
-			&:last-child span {
-				border: 0;
-			}
+		@media #{$small-only} {
+		    justify-content: center;
 		}
 
-		a,
+		@media #{$medium-up} {
+		    position: relative;
+		    top: 36px; // magic
+		}
+
 		span {
 			@extend .pink-text;
-
 			padding: rem-calc(0 10);
 			border-right: 1px solid $primary-color;
 
 			@media #{$xlarge-up} {
-			    padding: rem-calc(0 15);
+			    // padding: rem-calc(0 15);
 			}
 		}
-	}
-}
 
-//-----------------------------------------------------------------
-// has-logo State
-//-----------------------------------------------------------------
-
-.global-header .logo {
-	@media #{$medium-up} {
-	    display: none;
-	}
-
-	@media #{$small-only} {
-		// text-align: center;
-		// width: 100%;
-	    visibility: hidden; // we still want the height
-	}
-
-	img {
-		@media #{$small-only} {
-			width: 44px;
+		> li:last-child span {
+			border: 0;
 		}
-	}
-}
-
-//-----------------------------------------------------------------
-// Links
-//-----------------------------------------------------------------
-
-.header-mobile-menu {
-	position: absolute;
-	top: 15px;
-	right: 15px;
-
-	a {
-		display: block;
-
-		&:active .hamburger-icon {
-			background: lighten($primary-color, 10%);
-		}
-	}
-
-	@media #{$medium-up} {
-	    right: 40px;
-	    top: auto;
-	    bottom: 15px;
-	}
-}
-
-.global-header .hamburger {
-	@include hamburger($width: 25px, $gap: 5px, $thickness: 3px, $color: $primary-color);
-
-	@media #{$medium-up} {
-	    @include hamburger($width: 30px, $gap: 6px, $thickness: 4px, $color: $primary-color);
-	}
-}
-
-//-----------------------------------------------------------------
-// has-logo State (fixed)
-//-----------------------------------------------------------------
-
-.global-header.has-logo {
-	position: fixed;
-	padding: 0; // necessary to override above
-	border-bottom: 1px solid #E6E6E6;
-	background: white;
-
-	.logo {
-		visibility: visible;
-		display: inline-block;
-		float: left;
-		margin-right: rem-calc(10);
-		padding: rem-calc(10 0);
-	}
-
-	.global-navigation a {
-		color: lighten($primary-color, 20%);
-		border-color: lighten($primary-color, 20%);
-	}
-
-	.active a {
-		color: $primary-color;
-	}
-
-	.active-override-off a {
-		color: lighten($primary-color, 20%) !important;
-	}
-
-	.active-override-on a {
-		color: $primary-color !important;
-	}
-
-	.header-mobile-menu {
-		top: 50%;
-		margin-top: -10px;
-
-		@media #{$medium-up} {
-		    margin-top: -12px;
-		}
-	}
-
-	.locations,
-	.global-navigation {
-		position: relative;
-		top: 36px; // magic
 	}
 }
 
